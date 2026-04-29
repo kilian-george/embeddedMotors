@@ -1,0 +1,7 @@
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/picotool
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/picotoolTargets.cmake
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/picotoolTargets-release.cmake
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/picotoolConfig.cmake
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/picotoolConfigVersion.cmake
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/enc_bootloader.elf
+/home/tinypc/cs466_s26/lab7/build/_deps/picotool/enc_bootloader_mbedtls.elf

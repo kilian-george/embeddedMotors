@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/tinypc/cs466_s26/lab7/build/CMakeFiles/picotoolBuild
+/home/tinypc/cs466_s26/lab7/build/CMakeFiles/picotoolBuild.rule
+/home/tinypc/cs466_s26/lab7/build/CMakeFiles/picotoolBuild-complete.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/tinypc/cs466_s26/lab7/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule
