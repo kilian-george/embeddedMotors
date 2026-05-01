@@ -108,7 +108,7 @@ void heartbeat(void * notUsed)
         // uint32_t rpm = rpmCalc();
 
         // printf("RPM %d, ", rpm);
-        printf("Pos: %d\n", (encoderTicks % 300));
+        printf("Pos: %d, target: %d\n", (encoderTicks % 300), target_position);
     }
 }
 
@@ -182,6 +182,8 @@ int main(void)
     stdio_init_all();
 
     xmotorMoveSem = xSemaphoreCreateBinary(); 
+    _sw1 = xSemaphoreCreateBinary(); 
+    _sw2 = xSemaphoreCreateBinary(); 
 
     hardware_init();
     motor_init();
