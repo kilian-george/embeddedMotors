@@ -34,6 +34,7 @@ void gpio_int_callback(uint gpio, uint32_t events_unused)
             encoderTicks++;
         else
             encoderTicks--;
+        set_postion(encoderTicks);
     }
     
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
@@ -108,7 +109,7 @@ void heartbeat(void * notUsed)
         // uint32_t rpm = rpmCalc();
 
         // printf("RPM %d, ", rpm);
-        printf("Pos: %d, target: %d\n", (encoderTicks % 300), target_position);
+        printf("Pos: %d, target: %d\n", (encoderTicks), target_position);
     }
 }
 
@@ -143,6 +144,7 @@ void sw1_click(void *none) {
             position_index = (position_index + 1) % 9;
 
             target_position = positions[position_index];
+            motor_set_position(target_position);
             //motorDrive(90);
         }
     }

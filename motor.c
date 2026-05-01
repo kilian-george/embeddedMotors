@@ -10,9 +10,9 @@
 #include "motor.h"
 #include "pwm.h"
 
-#define KP 0.075
-#define KI 0.05
-#define KD 0.01
+#define KP 0.05
+#define KI 0.01
+#define KD 0.3
 
 typedef enum {
         IRQ_LEVEL_LOW =  0x1,
@@ -164,7 +164,7 @@ static void _pidPositionServo( void *notUsed )
     while(1)
     {
         int error = _motorSetpointPosition - _encoder;
-        integral = integral + error*dt;
+        integral = (previous_error + error)/2*dt;
         double derivative = (error - previous_error)/dt;
         double output = Kp*error + Ki*integral + Kd*derivative;
         int drive = output;
@@ -200,9 +200,9 @@ static uint32_t _readTimer(void)
     return time_us_32();
 }
 
-uint32_t get_postion(void)
+void set_postion(uint32_t position)
 {
-    return _encoder;
+    _encoder = position;
 }
 
 void motor_set_position(int32_t position)
