@@ -4,31 +4,21 @@
  * @author  Sage F
  * @date    2026-04-14
  */
-#include <stdio.h>
-
-#include <FreeRTOS.h>
-#include <task.h>
-#include <semphr.h>
-
-#include "hardware/gpio.h"
-#include "pico/stdlib.h"
-
-#include "motor.c"
-#include "pwm.c"
-
-const uint8_t LED_PIN = 25;
-
-const uint8_t SW1_PIN = 7;
-const uint8_t SW2_PIN = 8;
-
-volatile int32_t encoderTicks = 0;
-volatile uint64_t RPMarr[50] = { 0 };
-volatile uint32_t arrCount = 0;
+#include "master.h"
 
 const uint32_t minPriority = 1;
 
-const uint16_t position[9] = { 435, 870, 1305, 1740, 3480, 5220, -5330, -3480, 0 };
-volatile int8_t cyclePos = 0;
+
+// SEMAPHORE HANDLERS
+static SemaphoreHandle_t _sw1 = NULL;
+static SemaphoreHandle_t _sw2 = NULL;
+
+uint8_t  sw1_pressed     = 0;
+int32_t  positions[9]    = {435, 870, 1305, 1740, 3480, 5220, -5220, -3480, 0};
+uint8_t  position_index  = 0;
+int32_t  target_position = 0;
+
+uint32_t encoderTicks = 0;
 
 uint32_t rpmCalc();
 
@@ -48,14 +38,15 @@ void gpio_int_callback(uint gpio, uint32_t events_unused)
     
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
-    if (gpio == SW1_PIN) {
-        cyclePos = (cyclePos + 1) % 9;
-        xSemaphoreGiveFromISR(xmotorMoveSem, &xHigherPriorityTaskWoken);
-    }
+   if (gpio == SW1) {
+        sw1_pressed = 1;
+        xSemaphoreGiveFromISR(_sw1, &xHigherPriorityTaskWoken);
+        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 
-    if (gpio == SW2_PIN) {
-        cyclePos = (cyclePos == 0) ? 8 : cyclePos - 1;
-        xSemaphoreGiveFromISR(xmotorMoveSem, &xHigherPriorityTaskWoken);
+    } 
+    else if (gpio == SW2 && sw1_pressed) {
+        xSemaphoreGiveFromISR(_sw2, &xHigherPriorityTaskWoken);
+        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
 
     portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
@@ -63,25 +54,45 @@ void gpio_int_callback(uint gpio, uint32_t events_unused)
 
 void hardware_init(void)
 {
-    const uint LED_PIN = PICO_DEFAULT_LED_PIN;
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_init(LED);
+    gpio_init(RED);
+    gpio_init(GREEN);
+    gpio_init(MOSI);
+    gpio_init(CLK);
+    gpio_init(CS);
+    gpio_init(MISO);
+    // gpio_init(PHA_PIN);
+    // gpio_init(PHB_PIN);
+    gpio_init(SW1);
+    gpio_init(SW2);
 
-    /*
-    gpio_init(PHA_PIN);
-    //gpio_pull_up(PHA_PIN);
-    gpio_set_dir(PHA_PIN, GPIO_IN);
-    gpio_set_irq_enabled_with_callback(PHA_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_int_callback);
+    gpio_set_dir(LED,     GPIO_OUT);
+    gpio_set_dir(RED,     GPIO_OUT);
+    gpio_set_dir(GREEN,   GPIO_OUT);
+    gpio_set_dir(MOSI,    GPIO_OUT);
+    gpio_set_dir(CLK,     GPIO_OUT);
+    gpio_set_dir(CS,      GPIO_OUT);
+    gpio_set_dir(MISO,    GPIO_IN);
+    // gpio_set_dir(PHA_PIN, GPIO_IN);
+    // gpio_set_dir(PHB_PIN, GPIO_IN);
+    gpio_set_dir(SW1,     GPIO_IN);
+    gpio_set_dir(SW2,     GPIO_IN);
 
-    gpio_init(PHB_PIN);
-    //gpio_pull_up(PHB_PIN);
-    gpio_set_dir(PHB_PIN, GPIO_IN);
-    gpio_set_irq_enabled_with_callback(PHB_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_int_callback);
-*/
-    gpio_init(SW1_PIN);
-    gpio_pull_up(SW1_PIN);
-    gpio_set_dir(SW1_PIN, GPIO_IN);
-    gpio_set_irq_enabled_with_callback(SW1_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_int_callback);
+    setCLK(LOW);    // set serial clock LOW
+    setCS(HIGH);    // Chip Select set to HIGH so child device knows were not trying to talk to it yet
+
+    gpio_pull_up(SW1);
+    gpio_pull_up(SW2);
+
+    gpio_put(RED, HIGH);
+    gpio_put(GREEN, HIGH);
+
+    // Create Semaphores
+    _sw1 = xSemaphoreCreateBinary();
+    _sw2 = xSemaphoreCreateBinary();
+
+    gpio_set_irq_enabled(SW1, GPIO_IRQ_EDGE_FALL, true);    
+    gpio_set_irq_enabled(SW2, GPIO_IRQ_EDGE_FALL, true);   
 
 }
 
@@ -90,9 +101,9 @@ void heartbeat(void * notUsed)
 {   
     while (true) {
         vTaskDelay(pdMS_TO_TICKS(100));
-        gpio_put(LED_PIN, 1);
+        gpio_put(LED, 1);
         vTaskDelay(pdMS_TO_TICKS(100));
-        gpio_put(LED_PIN, 0);
+        gpio_put(LED, 0);
 
         // uint32_t rpm = rpmCalc();
 
@@ -101,6 +112,7 @@ void heartbeat(void * notUsed)
     }
 }
 
+#if 0
 uint32_t rpmCalc(){
 
     if (arrCount < 50)
@@ -121,7 +133,34 @@ uint32_t rpmCalc(){
     uint64_t avg = total / (50-1);
     return (uint32_t)(60000 / (avg * 300));
 }
+#endif
 
+void sw1_click(void *none) {
+    while(1) {
+        if (xSemaphoreTake(_sw1, portMAX_DELAY) == pdPASS) {
+            gpio_put(LED, LOW);
+            printf("SW1 pressed\n");
+            position_index = (position_index + 1) % 9;
+
+            target_position = positions[position_index];
+            //motorDrive(90);
+        }
+    }
+}
+
+void sw2_click(void *none) {
+    while(1) {
+        if (xSemaphoreTake(_sw2, portMAX_DELAY) == pdPASS) {
+            gpio_put(LED, LOW);
+            printf("SW2 pressed\n");
+            if (position_index == 0) position_index = 9;
+            else position_index -= 1;
+            target_position = positions[position_index];
+        }
+    }
+}
+
+#if 0
 void MotorMover(void *notUsed)
 {
     for (;;)
@@ -136,6 +175,7 @@ void MotorMover(void *notUsed)
         motor_set_position(position[pos]);
     }
 }
+#endif
 
 int main(void)
 {
@@ -147,7 +187,9 @@ int main(void)
     motor_init();
     
     xTaskCreate(heartbeat, "heartbeatTask", 256, NULL, minPriority, NULL);
-    xTaskCreate(MotorMover, "MotorMover", 256, NULL, minPriority, NULL);
+    //xTaskCreate(MotorMover, "MotorMover", 256, NULL, minPriority, NULL);
+    xTaskCreate(sw1_click, "sw1_click", 1024, NULL, minPriority+3, NULL);
+    xTaskCreate(sw2_click, "sw2_click", 1024, NULL, minPriority+3, NULL);
     //xTaskCreate(_pidPositionServo, "pid", 256, NULL, minPriority, NULL);
 
     vTaskStartScheduler();

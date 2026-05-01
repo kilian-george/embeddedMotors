@@ -2311,6 +2311,54 @@ mSpi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/mSpi.c.s
 .PHONY : mSpi.c.s
 
+motor.o: motor.c.o
+.PHONY : motor.o
+
+# target to build an object file
+motor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/motor.c.o
+.PHONY : motor.c.o
+
+motor.i: motor.c.i
+.PHONY : motor.i
+
+# target to preprocess a source file
+motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/motor.c.i
+.PHONY : motor.c.i
+
+motor.s: motor.c.s
+.PHONY : motor.s
+
+# target to generate assembly for a file
+motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/motor.c.s
+.PHONY : motor.c.s
+
+pwm.o: pwm.c.o
+.PHONY : pwm.o
+
+# target to build an object file
+pwm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/pwm.c.o
+.PHONY : pwm.c.o
+
+pwm.i: pwm.c.i
+.PHONY : pwm.i
+
+# target to preprocess a source file
+pwm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/pwm.c.i
+.PHONY : pwm.c.i
+
+pwm.s: pwm.c.s
+.PHONY : pwm.s
+
+# target to generate assembly for a file
+pwm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/pwm.c.s
+.PHONY : pwm.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2589,6 +2637,12 @@ help:
 	@echo "... mSpi.o"
 	@echo "... mSpi.i"
 	@echo "... mSpi.s"
+	@echo "... motor.o"
+	@echo "... motor.i"
+	@echo "... motor.s"
+	@echo "... pwm.o"
+	@echo "... pwm.i"
+	@echo "... pwm.s"
 .PHONY : help
 
 

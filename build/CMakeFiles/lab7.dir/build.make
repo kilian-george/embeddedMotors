@@ -114,10 +114,38 @@ CMakeFiles/lab7.dir/mGpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab7.dir/mGpio.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tinypc/cs466_s26/lab7/mGpio.c -o CMakeFiles/lab7.dir/mGpio.c.s
 
+CMakeFiles/lab7.dir/motor.c.o: CMakeFiles/lab7.dir/flags.make
+CMakeFiles/lab7.dir/motor.c.o: /home/tinypc/cs466_s26/lab7/motor.c
+CMakeFiles/lab7.dir/motor.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lab7.dir/motor.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/motor.c.o -MF CMakeFiles/lab7.dir/motor.c.o.d -o CMakeFiles/lab7.dir/motor.c.o -c /home/tinypc/cs466_s26/lab7/motor.c
+
+CMakeFiles/lab7.dir/motor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab7.dir/motor.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tinypc/cs466_s26/lab7/motor.c > CMakeFiles/lab7.dir/motor.c.i
+
+CMakeFiles/lab7.dir/motor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab7.dir/motor.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tinypc/cs466_s26/lab7/motor.c -o CMakeFiles/lab7.dir/motor.c.s
+
+CMakeFiles/lab7.dir/pwm.c.o: CMakeFiles/lab7.dir/flags.make
+CMakeFiles/lab7.dir/pwm.c.o: /home/tinypc/cs466_s26/lab7/pwm.c
+CMakeFiles/lab7.dir/pwm.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lab7.dir/pwm.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/pwm.c.o -MF CMakeFiles/lab7.dir/pwm.c.o.d -o CMakeFiles/lab7.dir/pwm.c.o -c /home/tinypc/cs466_s26/lab7/pwm.c
+
+CMakeFiles/lab7.dir/pwm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab7.dir/pwm.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tinypc/cs466_s26/lab7/pwm.c > CMakeFiles/lab7.dir/pwm.c.i
+
+CMakeFiles/lab7.dir/pwm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab7.dir/pwm.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tinypc/cs466_s26/lab7/pwm.c -o CMakeFiles/lab7.dir/pwm.c.s
+
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o: /home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o -c /home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -159,7 +187,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_commo
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -187,7 +215,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o: /home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o -c /home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
@@ -201,7 +229,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -215,7 +243,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -229,7 +257,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -242,7 +270,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -256,7 +284,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq_ha
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -270,7 +298,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/sem.c.s: cmak
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -284,7 +312,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -298,7 +326,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.s: cm
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -312,7 +340,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_sect
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -326,7 +354,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.s: cma
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -340,7 +368,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/timeout_helpe
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -354,7 +382,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/time
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -368,7 +396,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/datetime.c.s:
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -382,7 +410,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/pheap.c.s: cm
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o: /home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.o -c /home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -396,7 +424,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_util/queue.c.s: cm
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -410,7 +438,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_uart/uart.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -424,7 +452,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clo
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -438,7 +466,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -452,7 +480,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -466,7 +494,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/w
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -480,7 +508,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/tick
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -494,7 +522,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootro
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -508,7 +536,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootro
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -522,7 +550,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_boot_lock/
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -536,7 +564,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -549,7 +577,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -563,7 +591,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_divider/di
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -577,7 +605,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtim
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -591,7 +619,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/r
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -605,7 +633,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/r
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -618,7 +646,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/r
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -631,7 +659,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_op
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -644,7 +672,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divide
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -658,7 +686,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -672,7 +700,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -685,7 +713,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -698,7 +726,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -711,7 +739,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -725,7 +753,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_ae
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -739,7 +767,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_in
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -752,7 +780,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_ma
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -766,7 +794,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -779,7 +807,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -793,7 +821,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_op
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -807,7 +835,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -821,7 +849,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/ne
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -835,7 +863,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binar
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -848,7 +876,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building ASM object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o   -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -862,7 +890,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s:
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -876,7 +904,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -890,7 +918,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -904,7 +932,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/rese
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -918,7 +946,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -932,7 +960,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -946,7 +974,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -960,7 +988,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flas
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -974,7 +1002,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xip_cache/
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -988,7 +1016,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -1002,7 +1030,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -1016,7 +1044,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s: c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1030,7 +1058,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_contro
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1044,7 +1072,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1058,7 +1086,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_devi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1072,7 +1100,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_devi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1086,7 +1114,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_d
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1100,7 +1128,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_devi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1114,7 +1142,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_de
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1128,7 +1156,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_devi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1142,7 +1170,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1156,7 +1184,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_devi
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1170,7 +1198,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtm
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1184,7 +1212,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendo
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1198,7 +1226,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/video/video_
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1212,7 +1240,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_fo
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1226,7 +1254,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1240,7 +1268,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.i: cmake_force
@@ -1254,7 +1282,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/T
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c.i: cmake_force
@@ -1268,7 +1296,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/croutine.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.i: cmake_force
@@ -1282,7 +1310,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_grou
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.i: cmake_force
@@ -1296,7 +1324,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.s: 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.i: cmake_force
@@ -1310,7 +1338,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.s:
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buffer.c.i: cmake_force
@@ -1324,7 +1352,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/stream_buf
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.i: cmake_force
@@ -1338,7 +1366,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.s:
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.i: cmake_force
@@ -1352,7 +1380,7 @@ CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.s
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1366,7 +1394,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -c /home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 
 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1380,7 +1408,7 @@ CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/mult
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o: CMakeFiles/lab7.dir/flags.make
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o: /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o: CMakeFiles/lab7.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o -MF CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o.d -o CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o -c /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c
 
 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.i: cmake_force
@@ -1396,6 +1424,8 @@ lab7_OBJECTS = \
 "CMakeFiles/lab7.dir/lab7.c.o" \
 "CMakeFiles/lab7.dir/mSpi.c.o" \
 "CMakeFiles/lab7.dir/mGpio.c.o" \
+"CMakeFiles/lab7.dir/motor.c.o" \
+"CMakeFiles/lab7.dir/pwm.c.o" \
 "CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o" \
@@ -1495,6 +1525,8 @@ lab7_EXTERNAL_OBJECTS =
 lab7.elf: CMakeFiles/lab7.dir/lab7.c.o
 lab7.elf: CMakeFiles/lab7.dir/mSpi.c.o
 lab7.elf: CMakeFiles/lab7.dir/mGpio.c.o
+lab7.elf: CMakeFiles/lab7.dir/motor.c.o
+lab7.elf: CMakeFiles/lab7.dir/pwm.c.o
 lab7.elf: CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 lab7.elf: CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 lab7.elf: CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -1591,7 +1623,7 @@ lab7.elf: CMakeFiles/lab7.dir/build.make
 lab7.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 lab7.elf: /home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 lab7.elf: CMakeFiles/lab7.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking CXX executable lab7.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tinypc/cs466_s26/lab7/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Linking CXX executable lab7.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab7.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/tinypc/cs466_s26/lab7/build/lab7.elf > lab7.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/tinypc/cs466_s26/lab7/build/lab7.elf >> lab7.dis

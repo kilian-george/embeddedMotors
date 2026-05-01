@@ -243,6 +243,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/tinypc/cs466_s26/lab7/lab7.c" "CMakeFiles/lab7.dir/lab7.c.o" "gcc" "CMakeFiles/lab7.dir/lab7.c.o.d"
   "/home/tinypc/cs466_s26/lab7/mGpio.c" "CMakeFiles/lab7.dir/mGpio.c.o" "gcc" "CMakeFiles/lab7.dir/mGpio.c.o.d"
   "/home/tinypc/cs466_s26/lab7/mSpi.c" "CMakeFiles/lab7.dir/mSpi.c.o" "gcc" "CMakeFiles/lab7.dir/mSpi.c.o.d"
+  "/home/tinypc/cs466_s26/lab7/motor.c" "CMakeFiles/lab7.dir/motor.c.o" "gcc" "CMakeFiles/lab7.dir/motor.c.o.d"
+  "/home/tinypc/cs466_s26/lab7/pwm.c" "CMakeFiles/lab7.dir/pwm.c.o" "gcc" "CMakeFiles/lab7.dir/pwm.c.o.d"
   "/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   )
 

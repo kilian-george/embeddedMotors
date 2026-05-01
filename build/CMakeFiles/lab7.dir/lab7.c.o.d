@@ -1,14 +1,17 @@
 CMakeFiles/lab7.dir/lab7.c.o: /home/tinypc/cs466_s26/lab7/lab7.c \
- /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
+ /home/tinypc/cs466_s26/lab7/master.h /usr/include/newlib/stdlib.h \
+ /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
- /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
- /usr/include/newlib/sys/features.h /usr/include/newlib/sys/cdefs.h \
- /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/sys/features.h \
  /usr/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
- /usr/lib/gcc/arm-none-eabi/14.2.1/include/stdarg.h \
  /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/machine/_default_types.h \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
- /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/machine/stdlib.h \
+ /usr/include/newlib/alloca.h /usr/include/newlib/stdio.h \
+ /usr/lib/gcc/arm-none-eabi/14.2.1/include/stdarg.h \
+ /usr/include/newlib/sys/stdio.h \
  /home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/include/FreeRTOS.h \
  /usr/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
  /home/tinypc/cs466_s26/lab7/./FreeRTOSConfig.h \
@@ -75,11 +78,4 @@ CMakeFiles/lab7.dir/lab7.c.o: /home/tinypc/cs466_s26/lab7/lab7.c \
  /home/tinypc/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/tinypc/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /home/tinypc/cs466_s26/lab7/motor.c /home/tinypc/cs466_s26/lab7/motor.h \
- /home/tinypc/cs466_s26/lab7/pwm.h /home/tinypc/cs466_s26/lab7/pwm.c \
- /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
- /home/tinypc/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
- /home/tinypc/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
- /home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
- /home/tinypc/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
- /home/tinypc/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
+ /home/tinypc/cs466_s26/lab7/motor.h /home/tinypc/cs466_s26/lab7/pwm.h
