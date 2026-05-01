@@ -2980,7 +2980,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0xa4dc
+.text           0x10000100     0xa4cc
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -3059,895 +3059,895 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x1000058c       0x98 CMakeFiles/lab7.dir/lab7.c.o
                 0x1000058c                main
  .text._pidPositionServo
-                0x10000624       0xfc CMakeFiles/lab7.dir/motor.c.o
+                0x10000624       0xe8 CMakeFiles/lab7.dir/motor.c.o
  .text.motor_init
-                0x10000720       0xa0 CMakeFiles/lab7.dir/motor.c.o
-                0x10000720                motor_init
+                0x1000070c       0xa0 CMakeFiles/lab7.dir/motor.c.o
+                0x1000070c                motor_init
  .text.set_postion
-                0x100007c0        0xc CMakeFiles/lab7.dir/motor.c.o
-                0x100007c0                set_postion
+                0x100007ac        0xc CMakeFiles/lab7.dir/motor.c.o
+                0x100007ac                set_postion
  .text.motor_set_position
-                0x100007cc       0x20 CMakeFiles/lab7.dir/motor.c.o
-                0x100007cc                motor_set_position
+                0x100007b8       0x20 CMakeFiles/lab7.dir/motor.c.o
+                0x100007b8                motor_set_position
  .text.ConfigurePWM
-                0x100007ec       0xb8 CMakeFiles/lab7.dir/pwm.c.o
-                0x100007ec                ConfigurePWM
+                0x100007d8       0xb8 CMakeFiles/lab7.dir/pwm.c.o
+                0x100007d8                ConfigurePWM
  .text.setPWMDuty
-                0x100008a4       0x5c CMakeFiles/lab7.dir/pwm.c.o
-                0x100008a4                setPWMDuty
+                0x10000890       0x68 CMakeFiles/lab7.dir/pwm.c.o
+                0x10000890                setPWMDuty
  .text.gpio_default_irq_handler
-                0x10000900      0x2c8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100008f8      0x2c8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .text.gpio_set_function
-                0x10000bc8       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000bc8                gpio_set_function
+                0x10000bc0       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000bc0                gpio_set_function
  .text.gpio_set_pulls
-                0x10000bfc       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000bfc                gpio_set_pulls
+                0x10000bf4       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000bf4                gpio_set_pulls
  .text.gpio_set_irq_enabled
-                0x10000c24       0x58 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000c24                gpio_set_irq_enabled
+                0x10000c1c       0x58 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000c1c                gpio_set_irq_enabled
  .text.gpio_set_irq_enabled_with_callback
-                0x10000c7c       0xd0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000c7c                gpio_set_irq_enabled_with_callback
+                0x10000c74       0xd0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000c74                gpio_set_irq_enabled_with_callback
  .text.gpio_init
-                0x10000d4c       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000d4c                gpio_init
+                0x10000d44       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000d44                gpio_init
  .text.rp2040_chip_version
-                0x10000d8c        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
-                0x10000d8c                rp2040_chip_version
- .text.panic    0x10000d98       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x10000d98                panic
+                0x10000d84        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x10000d84                rp2040_chip_version
+ .text.panic    0x10000d90       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10000d90                panic
  .text.panic_unsupported
-                0x10000dc8        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x10000dc8                panic_unsupported
+                0x10000dc0        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10000dc0                panic_unsupported
  .text.hw_claim_or_assert
-                0x10000dd4       0x44 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000dd4                hw_claim_or_assert
+                0x10000dcc       0x44 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000dcc                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10000e18       0x88 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000e18                hw_claim_unused_from_range
+                0x10000e10       0x88 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000e10                hw_claim_unused_from_range
  .text.next_striped_spin_lock_num
-                0x10000ea0       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000ea0                next_striped_spin_lock_num
+                0x10000e98       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000e98                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x10000eb8       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000eb8                spin_lock_claim_unused
+                0x10000eb0       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000eb0                spin_lock_claim_unused
  .text.spin_locks_reset
-                0x10000edc       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10000edc                spin_locks_reset
+                0x10000ed4       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10000ed4                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x10000ef8       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000ef8                runtime_init_per_core_irq_priorities
+                0x10000ef0       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000ef0                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10000f1c       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000f1c                irq_set_enabled
+                0x10000f14       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000f14                irq_set_enabled
  .text.irq_is_enabled
-                0x10000f40       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000f40                irq_is_enabled
+                0x10000f38       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000f38                irq_is_enabled
  .text.irq_set_pending
-                0x10000f58       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000f58                irq_set_pending
+                0x10000f50       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000f50                irq_set_pending
  .text.irq_has_shared_handler
-                0x10000f68       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000f68                irq_has_shared_handler
+                0x10000f60       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000f60                irq_has_shared_handler
  .text.irq_set_exclusive_handler
-                0x10000f8c       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000f8c                irq_set_exclusive_handler
+                0x10000f84       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000f84                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x10000fe0      0x1f4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000fe0                irq_add_shared_handler
+                0x10000fd8      0x1f4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000fd8                irq_add_shared_handler
  .text.irq_remove_handler
-                0x100011d4      0x1d4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100011d4                irq_remove_handler
+                0x100011cc      0x1d4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100011cc                irq_remove_handler
  .text.irq_set_priority
-                0x100013a8       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100013a8                irq_set_priority
+                0x100013a0       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100013a0                irq_set_priority
  .text.irq_add_tail_to_free_list
-                0x100013d0       0xb4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100013d0                irq_add_tail_to_free_list
+                0x100013c8       0xb4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100013c8                irq_add_tail_to_free_list
  .text.user_irq_claim_unused
-                0x10001484       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10001484                user_irq_claim_unused
+                0x1000147c       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000147c                user_irq_claim_unused
  .text.lock_init
-                0x100014b0       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x100014b0                lock_init
+                0x100014a8       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x100014a8                lock_init
  .text.runtime_init_mutex
-                0x100014c0       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100014c0                runtime_init_mutex
+                0x100014b8       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100014b8                runtime_init_mutex
  .text.mutex_init
-                0x10001514       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10001514                mutex_init
+                0x1000150c       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x1000150c                mutex_init
  .text.critical_section_init
-                0x10001530       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
-                0x10001530                critical_section_init
+                0x10001528       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x10001528                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x1000154c       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
-                0x1000154c                critical_section_init_with_lock_num
+                0x10001544       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x10001544                critical_section_init_with_lock_num
  .text.alarm_pool_irq_handler
-                0x10001560      0x300 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001558      0x300 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.sleep_until_callback
-                0x10001860       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001858       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10001884       0xdc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001884                runtime_init_default_alarm_pool
+                0x1000187c       0xdc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x1000187c                runtime_init_default_alarm_pool
  .text.alarm_pool_get_default
-                0x10001960        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001960                alarm_pool_get_default
+                0x10001958        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001958                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x10001968       0xd0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001968                alarm_pool_add_alarm_at
+                0x10001960       0xd0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001960                alarm_pool_add_alarm_at
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10001a38       0xb0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001a38                alarm_pool_add_alarm_at_force_in_context
+                0x10001a30       0xb0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001a30                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10001ae8       0x74 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001ae8                alarm_pool_cancel_alarm
+                0x10001ae0       0x74 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001ae0                alarm_pool_cancel_alarm
  .text.alarm_pool_core_num
-                0x10001b5c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001b5c                alarm_pool_core_num
+                0x10001b54        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001b54                alarm_pool_core_num
  .text.sleep_us
-                0x10001b60       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001b60                sleep_us
+                0x10001b58       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001b58                sleep_us
  .text.best_effort_wfe_or_timeout
-                0x10001c48      0x10c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001c48                best_effort_wfe_or_timeout
+                0x10001c40      0x10c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001c40                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10001d54       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001d54                timer_hardware_alarm_claim
+                0x10001d4c       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001d4c                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10001d68       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001d68                timer_time_us_64
+                0x10001d60       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001d60                timer_time_us_64
  .text.time_us_64
-                0x10001d78       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001d78                time_us_64
+                0x10001d70       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001d70                time_us_64
  .text.busy_wait_until
-                0x10001d8c       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001d8c                busy_wait_until
+                0x10001d84       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001d84                busy_wait_until
  .text.clock_configure_int_divider
-                0x10001dac       0xf4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001dac                clock_configure_int_divider
+                0x10001da4       0xf4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001da4                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10001ea0       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001ea0                clock_configure_undivided
+                0x10001e98       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001e98                clock_configure_undivided
  .text.clock_get_hz
-                0x10001f88        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001f88                clock_get_hz
+                0x10001f80        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001f80                clock_get_hz
  .text.pll_init
-                0x10001f94       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10001f94                pll_init
+                0x10001f8c       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10001f8c                pll_init
  .text.watchdog_reboot
-                0x10002038       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-                0x10002038                watchdog_reboot
+                0x10002030       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+                0x10002030                watchdog_reboot
  .text.tick_start
-                0x100020d4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x100020d4                tick_start
+                0x100020cc       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x100020cc                tick_start
  .text.rom_func_lookup
-                0x100020e4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100020e4                rom_func_lookup
+                0x100020dc       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100020dc                rom_func_lookup
  .text.rom_data_lookup
-                0x100020f4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100020f4                rom_data_lookup
+                0x100020ec       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100020ec                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10002104       0x44 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002104                rom_funcs_lookup
+                0x100020fc       0x44 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100020fc                rom_funcs_lookup
  .text.rom_reset_usb_boot_extra
-                0x10002148       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10002148                rom_reset_usb_boot_extra
+                0x10002140       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10002140                rom_reset_usb_boot_extra
  .text.xosc_init
-                0x1000216c       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x1000216c                xosc_init
+                0x10002164       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x10002164                xosc_init
  .text.first_per_core_initializer
-                0x10002194        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000218c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x10002198        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10002198                hard_assertion_failure
+                0x10002190        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10002190                hard_assertion_failure
  .text.runtime_run_initializers
-                0x100021a4       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100021a4                runtime_run_initializers
+                0x1000219c       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000219c                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x100021cc       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100021cc                runtime_init_early_resets
+                0x100021c4       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100021c4                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x100021f8       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100021f8                runtime_init_usb_power_down
+                0x100021f0       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100021f0                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10002214       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002214                runtime_init_post_clock_resets
+                0x1000220c       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000220c                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x10002234       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002234                runtime_init_rp2040_gpio_ie_disable
+                0x1000222c       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000222c                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x10002248        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002248                runtime_init_spin_locks_reset
+                0x10002240        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002240                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x10002250       0xb4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002250                runtime_init_install_ram_vector_table
+                0x10002248       0xb4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002248                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x10002304       0xd8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x10002304                runtime_init_clocks
- .text          0x100023dc       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x100022fc       0xd8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x100022fc                runtime_init_clocks
+ .text          0x100023d4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_idiv
-                0x100023ec       0x50 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x100023ec                __wrap___aeabi_idivmod
-                0x100023ec                divmod_s32s32
-                0x100023ec                div_s32s32
-                0x100023ec                __wrap___aeabi_idiv
-                0x100023f4                divmod_s32s32_unsafe
-                0x10002420                divmod_s32s32_savestate
+                0x100023e4       0x50 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x100023e4                __wrap___aeabi_idivmod
+                0x100023e4                divmod_s32s32
+                0x100023e4                div_s32s32
+                0x100023e4                __wrap___aeabi_idiv
+                0x100023ec                divmod_s32s32_unsafe
+                0x10002418                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x1000243c       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x1000243c                __wrap___aeabi_uidiv
-                0x1000243c                __wrap___aeabi_uidivmod
-                0x1000243c                div_u32u32
-                0x1000243c                divmod_u32u32
-                0x10002444                divmod_u32u32_unsafe
-                0x1000246c                divmod_u32u32_savestate
+                0x10002434       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10002434                __wrap___aeabi_uidiv
+                0x10002434                __wrap___aeabi_uidivmod
+                0x10002434                div_u32u32
+                0x10002434                divmod_u32u32
+                0x1000243c                divmod_u32u32_unsafe
+                0x10002464                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10002488      0x424 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10002488                div_s64s64
-                0x10002488                divmod_s64s64
-                0x10002488                __wrap___aeabi_ldivmod
-                0x100024b8                div_u64u64
-                0x100024b8                divmod_u64u64
-                0x100024b8                __wrap___aeabi_uldivmod
-                0x100024c8                divmod_u64u64_savestate
-                0x100024e8                divmod_s64s64_unsafe
-                0x10002570                divmod_u64u64_unsafe
+                0x10002480      0x424 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10002480                div_s64s64
+                0x10002480                divmod_s64s64
+                0x10002480                __wrap___aeabi_ldivmod
+                0x100024b0                div_u64u64
+                0x100024b0                divmod_u64u64
+                0x100024b0                __wrap___aeabi_uldivmod
+                0x100024c0                divmod_u64u64_savestate
+                0x100024e0                divmod_s64s64_unsafe
+                0x10002568                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x100028ac       0x80 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100028ac                __wrap___aeabi_drsub
-                0x100028b2                __wrap___aeabi_dsub
-                0x100028c4                __wrap___aeabi_dadd
-                0x100028d6                __wrap___aeabi_ddiv
-                0x10002912                __wrap___aeabi_dmul
+                0x100028a4       0x80 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100028a4                __wrap___aeabi_drsub
+                0x100028aa                __wrap___aeabi_dsub
+                0x100028bc                __wrap___aeabi_dadd
+                0x100028ce                __wrap___aeabi_ddiv
+                0x1000290a                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x1000292c       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x1000292c                __wrap___aeabi_cdrcmple
-                0x1000293c                __wrap___aeabi_cdcmple
-                0x1000293c                __wrap___aeabi_cdcmpeq
+                0x10002924       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002924                __wrap___aeabi_cdrcmple
+                0x10002934                __wrap___aeabi_cdcmple
+                0x10002934                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10002998        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002998                __wrap___aeabi_dcmplt
+                0x10002990        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002990                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x100029a4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029a4                __wrap___aeabi_dcmple
+                0x1000299c       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x1000299c                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x100029b4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029b4                __wrap___aeabi_dcmpge
+                0x100029ac       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100029ac                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x100029c4        0xa CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029c4                __wrap___aeabi_dcmpgt
+                0x100029bc        0xa CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100029bc                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x100029ce       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029ce                __wrap___aeabi_dcmpun
- *fill*         0x100029e6        0x2 
+                0x100029c6       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100029c6                __wrap___aeabi_dcmpun
+ *fill*         0x100029de        0x2 
  .text.__wrap___aeabi_i2d
-                0x100029e8       0x38 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x100029e8                __wrap___aeabi_ui2d
-                0x100029e8                uint2double
-                0x100029f0                __wrap___aeabi_i2d
-                0x100029f0                int2double
+                0x100029e0       0x38 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100029e0                __wrap___aeabi_ui2d
+                0x100029e0                uint2double
+                0x100029e8                __wrap___aeabi_i2d
+                0x100029e8                int2double
  .text.__wrap___aeabi_d2iz
-                0x10002a20       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a20                __wrap___aeabi_d2iz
-                0x10002a20                double2int_z
+                0x10002a18       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a18                __wrap___aeabi_d2iz
+                0x10002a18                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x10002a68       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
-                0x10002a68                double2uint_z
-                0x10002a68                double2uint
-                0x10002a68                __wrap___aeabi_d2uiz
+                0x10002a60       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x10002a60                double2uint_z
+                0x10002a60                double2uint
+                0x10002a60                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x10002a80       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x10002a80                __aeabi_double_init
+                0x10002a78       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x10002a78                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10002b24       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002b24                double_table_shim_on_use_helper
+                0x10002b1c       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002b1c                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10002b50       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002b50                drsub_shim
-                0x10002b56                dsub_shim
+                0x10002b48       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002b48                drsub_shim
+                0x10002b4e                dsub_shim
  .text.dadd_shim
-                0x10002b60      0x15c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002b60                dadd_shim
+                0x10002b58      0x15c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002b58                dadd_shim
  .text.dmul_shim
-                0x10002cbc      0x15c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002cbc                dmul_shim
+                0x10002cb4      0x15c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002cb4                dmul_shim
  .text.ddiv_shim
-                0x10002e18      0x1b0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002e18                ddiv_shim
+                0x10002e10      0x1b0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002e10                ddiv_shim
  .text.double2uint_shim
-                0x10002fc8        0xe CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002fc8                double2uint_shim
-                0x10002fca                double2ufix_shim
- *fill*         0x10002fd6        0x2 
+                0x10002fc0        0xe CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002fc0                double2uint_shim
+                0x10002fc2                double2ufix_shim
+ *fill*         0x10002fce        0x2 
  .text.double2uint64_shim
-                0x10002fd8       0x70 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10002fd8                double2uint64_shim
-                0x10002fda                double2ufix64_shim
-                0x10002ffa                d2fix_a
+                0x10002fd0       0x70 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10002fd0                double2uint64_shim
+                0x10002fd2                double2ufix64_shim
+                0x10002ff2                d2fix_a
  .text.dunpacks
-                0x10003048       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10003048                dunpacks
+                0x10003040       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10003040                dunpacks
  .text.__aeabi_lmul
-                0x10003084       0x32 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-                0x10003084                __wrap___aeabi_lmul
- *fill*         0x100030b6        0x2 
+                0x1000307c       0x32 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+                0x1000307c                __wrap___aeabi_lmul
+ *fill*         0x100030ae        0x2 
  .text.__aeabi_float_init
-                0x100030b8       0x64 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x100030b8                __aeabi_float_init
+                0x100030b0       0x64 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x100030b0                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x1000311c       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x1000311c                float_table_shim_on_use_helper
+                0x10003114       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x10003114                float_table_shim_on_use_helper
  .text.__wrap_malloc
-                0x10003148       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-                0x10003148                __wrap_malloc
+                0x10003140       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x10003140                __wrap_malloc
  .text.__wrap_free
-                0x10003184       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-                0x10003184                __wrap_free
- .text          0x100031a4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100031a4                __aeabi_mem_init
- .text.memset   0x100031b4        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100031b4                __wrap_memset
- .text.memcpy   0x100031c0        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x100031c0                __wrap___aeabi_memcpy
-                0x100031c0                __wrap_memcpy
+                0x1000317c       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x1000317c                __wrap_free
+ .text          0x1000319c       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000319c                __aeabi_mem_init
+ .text.memset   0x100031ac        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100031ac                __wrap_memset
+ .text.memcpy   0x100031b8        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100031b8                __wrap___aeabi_memcpy
+                0x100031b8                __wrap_memcpy
  .text._out_null
-                0x100031cc        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100031c4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_rev
-                0x100031d0       0xac CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100031c8       0xac CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._ntoa_format
-                0x1000327c      0x1cc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003274      0x1cc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_char
-                0x10003448       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003440       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_fct
-                0x10003458       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._ftoa    0x10003468      0x4a8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._etoa    0x10003910      0x57c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003450       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._ftoa    0x10003460      0x4a8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._etoa    0x10003908      0x57c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._vsnprintf
-                0x10003e8c      0xbe0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003e84      0xbe0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.vfctprintf
-                0x10004a6c       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10004a6c                vfctprintf
+                0x10004a64       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10004a64                vfctprintf
  .text.weak_raw_vprintf
-                0x10004a90       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10004a90                weak_raw_vprintf
- .text._exit    0x10004ac0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10004ac0                _exit
- .text._sbrk    0x10004ac4       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10004ac4                _sbrk
- .text.exit     0x10004af8        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10004af8                exit
+                0x10004a88       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10004a88                weak_raw_vprintf
+ .text._exit    0x10004ab8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10004ab8                _exit
+ .text._sbrk    0x10004abc       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10004abc                _sbrk
+ .text.exit     0x10004af0        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10004af0                exit
  .text.runtime_init
-                0x10004b00       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10004b00                runtime_init
+                0x10004af8       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10004af8                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10004b2c       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004b24       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x10004b3c       0xb0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004b34       0xb0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_buffered_printer
-                0x10004bec       0x64 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004be4       0x64 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x10004c50       0xfc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004c50                stdio_put_string
+                0x10004c48       0xfc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004c48                stdio_put_string
  .text.stdio_set_driver_enabled
-                0x10004d4c       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004d4c                stdio_set_driver_enabled
+                0x10004d44       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004d44                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x10004d7c        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004d7c                stdio_init_all
+                0x10004d74        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004d74                stdio_init_all
  .text.__wrap_putchar
-                0x10004d84       0x94 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004d84                stdio_putchar
-                0x10004d84                __wrap_putchar
+                0x10004d7c       0x94 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004d7c                stdio_putchar
+                0x10004d7c                __wrap_putchar
  .text.__wrap_puts
-                0x10004e18       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004e18                __wrap_puts
-                0x10004e18                stdio_puts
+                0x10004e10       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004e10                __wrap_puts
+                0x10004e10                stdio_puts
  .text.__wrap_vprintf
-                0x10004e54       0xcc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004e54                __wrap_vprintf
-                0x10004e54                stdio_vprintf
+                0x10004e4c       0xcc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004e4c                __wrap_vprintf
+                0x10004e4c                stdio_vprintf
  .text.__wrap_printf
-                0x10004f20       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10004f20                stdio_printf
-                0x10004f20                __wrap_printf
+                0x10004f18       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10004f18                stdio_printf
+                0x10004f18                __wrap_printf
  .text.resetd_init
-                0x10004f38        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004f30        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_reset
-                0x10004f3c        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004f34        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_open
-                0x10004f48       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004f40       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_xfer_cb
-                0x10004f70        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004f68        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.resetd_control_xfer_cb
-                0x10004f74       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004f6c       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .text.tud_descriptor_bos_cb
-                0x10004fc8        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x10004fc8                tud_descriptor_bos_cb
+                0x10004fc0        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004fc0                tud_descriptor_bos_cb
  .text.tud_vendor_control_xfer_cb
-                0x10004fd0       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x10004fd0                tud_vendor_control_xfer_cb
+                0x10004fc8       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004fc8                tud_vendor_control_xfer_cb
  .text.usbd_app_driver_get_cb
-                0x10005004        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x10005004                usbd_app_driver_get_cb
+                0x10004ffc        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10004ffc                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x10005010       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x10005010                tud_cdc_line_coding_cb
+                0x10005008       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x10005008                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x1000503c       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x1000503c                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x10005050       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005034       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005034                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x10005048       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.timer_task
-                0x10005060       0x64 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005058       0x64 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_in_chars
-                0x100050c4       0x8c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x100050c4                stdio_usb_in_chars
+                0x100050bc       0x8c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x100050bc                stdio_usb_in_chars
  .text.stdio_usb_out_flush
-                0x10005150       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005148       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_out_chars
-                0x1000519c      0x100 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005194      0x100 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.low_priority_worker_irq
-                0x1000529c       0xc8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x10005294       0xc8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .text.stdio_usb_init
-                0x10005364       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x10005364                stdio_usb_init
+                0x1000535c       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1000535c                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x1000544c        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-                0x1000544c                tud_descriptor_device_cb
+                0x10005444        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x10005444                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x10005454        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-                0x10005454                tud_descriptor_configuration_cb
+                0x1000544c        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1000544c                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x1000545c       0x78 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-                0x1000545c                tud_descriptor_string_cb
+                0x10005454       0x78 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x10005454                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x100054d4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100054cc       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .text.pico_get_unique_board_id_string
-                0x100054e4      0x1a8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
-                0x100054e4                pico_get_unique_board_id_string
+                0x100054dc      0x1a8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x100054dc                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x1000568c       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-                0x1000568c                flash_get_unique_id
+                0x10005684       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x10005684                flash_get_unique_id
  .text.dcd_init
-                0x100056c8       0x90 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100056c8                dcd_init
+                0x100056c0       0x90 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100056c0                dcd_init
  .text.dcd_int_enable
-                0x10005758        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005758                dcd_int_enable
+                0x10005750        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005750                dcd_int_enable
  .text.dcd_set_address
-                0x10005764       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005764                dcd_set_address
+                0x1000575c       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1000575c                dcd_set_address
  .text.dcd_sof_enable
-                0x10005778       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005778                dcd_sof_enable
+                0x10005770       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005770                dcd_sof_enable
  .text.dcd_edpt0_status_complete
-                0x10005794       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x10005794                dcd_edpt0_status_complete
+                0x1000578c       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1000578c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x100057b0      0x114 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100057b0                dcd_edpt_open
+                0x100057a8      0x114 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100057a8                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x100058c4        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100058c4                dcd_edpt_close_all
+                0x100058bc        0x8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100058bc                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x100058cc       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100058cc                dcd_edpt_xfer
+                0x100058c4       0x24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100058c4                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x100058f0       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x100058f0                dcd_edpt_stall
+                0x100058e8       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x100058e8                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x1000592c       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-                0x1000592c                dcd_edpt_clear_stall
+                0x10005924       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x10005924                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x1000595c       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x1000595c                rp2040_usb_init
+                0x10005954       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x10005954                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x1000599c       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-                0x1000599c                hw_endpoint_xfer_start
+                0x10005994       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x10005994                hw_endpoint_xfer_start
  .text.tud_event_hook_cb
-                0x100059dc        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059dc                tud_event_hook_cb
+                0x100059d4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059d4                tud_event_hook_cb
  .text.tud_sof_cb
-                0x100059e0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059e0                tud_sof_cb
+                0x100059d8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059d8                tud_sof_cb
  .text.tud_descriptor_device_qualifier_cb
-                0x100059e4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059e4                tud_descriptor_device_qualifier_cb
+                0x100059dc        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059dc                tud_descriptor_device_qualifier_cb
  .text.tud_descriptor_other_speed_configuration_cb
-                0x100059e8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059e8                tud_descriptor_other_speed_configuration_cb
+                0x100059e0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059e0                tud_descriptor_other_speed_configuration_cb
  .text.tud_mount_cb
-                0x100059ec        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059ec                tud_mount_cb
+                0x100059e4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059e4                tud_mount_cb
  .text.tud_umount_cb
-                0x100059f0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059f0                tud_umount_cb
+                0x100059e8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059e8                tud_umount_cb
  .text.tud_suspend_cb
-                0x100059f4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059f4                tud_suspend_cb
+                0x100059ec        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059ec                tud_suspend_cb
  .text.tud_resume_cb
-                0x100059f8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059f8                tud_resume_cb
+                0x100059f0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059f0                tud_resume_cb
  .text.tud_mounted
-                0x100059fc       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100059fc                tud_mounted
+                0x100059f4       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100059f4                tud_mounted
  .text.tud_suspended
-                0x10005a0c       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005a0c                tud_suspended
+                0x10005a04       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005a04                tud_suspended
  .text.tud_rhport_init
-                0x10005a1c       0xf4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005a1c                tud_rhport_init
+                0x10005a14       0xf4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005a14                tud_rhport_init
  .text.tud_task_ext
-                0x10005b10      0x800 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10005b10                tud_task_ext
+                0x10005b08      0x800 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10005b08                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x10006310       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006310                usbd_open_edpt_pair
+                0x10006308       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006308                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x100063ac       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100063ac                usbd_edpt_open
+                0x100063a4       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100063a4                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x100063e0       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x100063e0                usbd_edpt_claim
+                0x100063d8       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x100063d8                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x10006408       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006408                usbd_edpt_release
+                0x10006400       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006400                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x10006430       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-                0x10006430                usbd_edpt_xfer
+                0x10006428       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x10006428                usbd_edpt_xfer
  .text.tud_control_status
-                0x1000647c       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x1000647c                tud_control_status
+                0x10006474       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006474                tud_control_status
  .text.tud_control_xfer
-                0x100064a8       0xa8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x100064a8                tud_control_xfer
+                0x100064a0       0xa8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x100064a0                tud_control_xfer
  .text.usbd_control_reset
-                0x10006550       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006550                usbd_control_reset
+                0x10006548       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006548                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x10006564        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006564                usbd_control_set_complete_callback
+                0x1000655c        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x1000655c                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x10006570       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x10006570                usbd_control_set_request
+                0x10006568       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006568                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x1000658c       0xec CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-                0x1000658c                usbd_control_xfer_cb
+                0x10006584       0xec CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x10006584                usbd_control_xfer_cb
  .text._prep_out_transaction.isra.0
-                0x10006678       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006670       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .text.tud_cdc_n_connected
-                0x100066e4       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100066e4                tud_cdc_n_connected
+                0x100066dc       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100066dc                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x10006710       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006710                tud_cdc_n_available
+                0x10006708       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006708                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x10006724       0x88 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006724                tud_cdc_n_read
+                0x1000671c       0x88 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x1000671c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x100067ac       0x74 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100067ac                tud_cdc_n_write_flush
+                0x100067a4       0x74 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100067a4                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x10006820       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006820                tud_cdc_n_write
+                0x10006818       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006818                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x10006860       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006860                tud_cdc_n_write_available
+                0x10006858       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006858                tud_cdc_n_write_available
  .text.cdcd_init
-                0x10006874       0x70 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006874                cdcd_init
+                0x1000686c       0x70 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x1000686c                cdcd_init
  .text.cdcd_deinit
-                0x100068e4       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x100068e4                cdcd_deinit
+                0x100068dc       0x30 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100068dc                cdcd_deinit
  .text.cdcd_reset
-                0x10006914       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006914                cdcd_reset
+                0x1000690c       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x1000690c                cdcd_reset
  .text.cdcd_open
-                0x10006960       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006960                cdcd_open
+                0x10006958       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006958                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x10006a04       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006a04                cdcd_control_xfer_cb
+                0x100069fc       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x100069fc                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x10006aec      0x100 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-                0x10006aec                cdcd_xfer_cb
+                0x10006ae4      0x100 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x10006ae4                cdcd_xfer_cb
  .text.vendord_init
-                0x10006bec       0x5c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10006bec                vendord_init
+                0x10006be4       0x5c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10006be4                vendord_init
  .text.vendord_deinit
-                0x10006c48       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10006c48                vendord_deinit
+                0x10006c40       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10006c40                vendord_deinit
  .text.vendord_reset
-                0x10006c64       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10006c64                vendord_reset
+                0x10006c5c       0x28 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10006c5c                vendord_reset
  .text.vendord_open
-                0x10006c8c      0x120 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10006c8c                vendord_open
+                0x10006c84      0x120 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10006c84                vendord_open
  .text.vendord_xfer_cb
-                0x10006dac       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-                0x10006dac                vendord_xfer_cb
+                0x10006da4       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x10006da4                vendord_xfer_cb
  .text.tusb_rhport_init
-                0x10006e48       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006e48                tusb_rhport_init
+                0x10006e40       0x4c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006e40                tusb_rhport_init
  .text.tu_edpt_claim
-                0x10006e94       0x50 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006e94                tu_edpt_claim
+                0x10006e8c       0x50 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006e8c                tu_edpt_claim
  .text.tu_edpt_release
-                0x10006ee4       0x38 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006ee4                tu_edpt_release
+                0x10006edc       0x38 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006edc                tu_edpt_release
  .text.tu_edpt_validate
-                0x10006f1c       0x7c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006f1c                tu_edpt_validate
+                0x10006f14       0x7c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006f14                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x10006f98       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006f98                tu_edpt_bind_driver
+                0x10006f90       0x34 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006f90                tu_edpt_bind_driver
  .text.tu_edpt_stream_init
-                0x10006fcc       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10006fcc                tu_edpt_stream_init
+                0x10006fc4       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10006fc4                tu_edpt_stream_init
  .text.tu_edpt_stream_deinit
-                0x10007038        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x10007038                tu_edpt_stream_deinit
+                0x10007030        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007030                tu_edpt_stream_deinit
  .text.tu_edpt_stream_write_zlp_if_needed
-                0x1000703c       0x68 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x1000703c                tu_edpt_stream_write_zlp_if_needed
+                0x10007034       0x68 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007034                tu_edpt_stream_write_zlp_if_needed
  .text.tu_edpt_stream_write_xfer
-                0x100070a4       0x68 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x100070a4                tu_edpt_stream_write_xfer
+                0x1000709c       0x68 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x1000709c                tu_edpt_stream_write_xfer
  .text.tu_edpt_stream_read_xfer
-                0x1000710c       0xd8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
-                0x1000710c                tu_edpt_stream_read_xfer
+                0x10007104       0xd8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x10007104                tu_edpt_stream_read_xfer
  .text.tu_fifo_config
-                0x100071e4       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100071e4                tu_fifo_config
+                0x100071dc       0x6c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100071dc                tu_fifo_config
  .text.tu_fifo_count
-                0x10007250       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007250                tu_fifo_count
+                0x10007248       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007248                tu_fifo_count
  .text.tu_fifo_empty
-                0x1000727c       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x1000727c                tu_fifo_empty
+                0x10007274       0x10 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007274                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x1000728c       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x1000728c                tu_fifo_remaining
+                0x10007284       0x2c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007284                tu_fifo_remaining
  .text.tu_fifo_read
-                0x100072b8       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100072b8                tu_fifo_read
+                0x100072b0       0x9c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100072b0                tu_fifo_read
  .text.tu_fifo_read_n
-                0x10007354       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007354                tu_fifo_read_n
+                0x1000734c       0xe8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x1000734c                tu_fifo_read_n
  .text.tu_fifo_write
-                0x1000743c       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x1000743c                tu_fifo_write
+                0x10007434       0xa4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007434                tu_fifo_write
  .text.tu_fifo_write_n
-                0x100074e0      0x178 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x100074e0                tu_fifo_write_n
+                0x100074d8      0x178 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x100074d8                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x10007658       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007658                tu_fifo_clear
+                0x10007650       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007650                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x10007698       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-                0x10007698                tu_fifo_set_overwritable
+                0x10007690       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x10007690                tu_fifo_set_overwritable
  .text.isr_svcall
-                0x100076e0        0x4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100076e0                isr_svcall
- *fill*         0x100076e4        0xc 
+                0x100076d8        0x4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x100076d8                isr_svcall
+ *fill*         0x100076dc        0x4 
  .text.vPortStartFirstTask
-                0x100076f0       0x34 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
- *fill*         0x10007724        0xc 
+                0x100076e0       0x34 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+ *fill*         0x10007714        0xc 
  .text.isr_pendsv
-                0x10007730       0x64 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x10007730                isr_pendsv
+                0x10007720       0x64 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007720                isr_pendsv
  .text.prvFIFOInterruptHandler
-                0x10007794       0x80 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007784       0x80 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
  .text.prvTaskExitError
-                0x10007814        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007804        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
  .text.pxPortInitialiseStack
-                0x1000781c       0x20 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x1000781c                pxPortInitialiseStack
+                0x1000780c       0x20 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x1000780c                pxPortInitialiseStack
  .text.vPortYield
-                0x1000783c       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x1000783c                vPortYield
+                0x1000782c       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x1000782c                vPortYield
  .text.vPortEnterCritical
-                0x10007854       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x10007854                vPortEnterCritical
+                0x10007844       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007844                vPortEnterCritical
  .text.vPortExitCritical
-                0x1000786c       0x34 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x1000786c                vPortExitCritical
+                0x1000785c       0x34 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x1000785c                vPortExitCritical
  .text.ulSetInterruptMaskFromISR
-                0x100078a0        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100078a0                ulSetInterruptMaskFromISR
+                0x10007890        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007890                ulSetInterruptMaskFromISR
  .text.vClearInterruptMaskFromISR
-                0x100078a8        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100078a8                vClearInterruptMaskFromISR
+                0x10007898        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007898                vClearInterruptMaskFromISR
  .text.isr_systick
-                0x100078b0       0x24 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100078b0                isr_systick
+                0x100078a0       0x24 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x100078a0                isr_systick
  .text.vPortSetupTimerInterrupt
-                0x100078d4       0x34 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100078d4                vPortSetupTimerInterrupt
+                0x100078c4       0x34 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x100078c4                vPortSetupTimerInterrupt
  .text.xPortStartScheduler
-                0x10007908       0x9c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x10007908                xPortStartScheduler
+                0x100078f8       0x9c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x100078f8                xPortStartScheduler
  .text.ulPortLockGetCurrentOwnerId
-                0x100079a4       0x2c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100079a4                ulPortLockGetCurrentOwnerId
+                0x10007994       0x2c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007994                ulPortLockGetCurrentOwnerId
  .text.vPortLockInternalSpinUnlockWithWait
-                0x100079d0       0x68 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x100079d0                vPortLockInternalSpinUnlockWithWait
+                0x100079c0       0x68 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x100079c0                vPortLockInternalSpinUnlockWithWait
  .text.vPortLockInternalSpinUnlockWithNotify
-                0x10007a38       0xd0 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x10007a38                vPortLockInternalSpinUnlockWithNotify
+                0x10007a28       0xd0 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007a28                vPortLockInternalSpinUnlockWithNotify
  .text.xPortLockInternalSpinUnlockWithBestEffortWaitOrTimeout
-                0x10007b08       0xf4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x10007b08                xPortLockInternalSpinUnlockWithBestEffortWaitOrTimeout
+                0x10007af8       0xf4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007af8                xPortLockInternalSpinUnlockWithBestEffortWaitOrTimeout
  .text.startup.prvRuntimeInitializer
-                0x10007bfc       0x28 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x10007bec       0x28 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
  .text.xEventGroupCreate
-                0x10007c24       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
-                0x10007c24                xEventGroupCreate
+                0x10007c14       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
+                0x10007c14                xEventGroupCreate
  .text.xEventGroupWaitBits
-                0x10007c3c       0xb8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
-                0x10007c3c                xEventGroupWaitBits
+                0x10007c2c       0xb8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
+                0x10007c2c                xEventGroupWaitBits
  .text.xEventGroupSetBits
-                0x10007cf4       0x94 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
-                0x10007cf4                xEventGroupSetBits
+                0x10007ce4       0x94 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
+                0x10007ce4                xEventGroupSetBits
  .text.vEventGroupSetBitsCallback
-                0x10007d88       0x90 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
-                0x10007d88                vEventGroupSetBitsCallback
+                0x10007d78       0x90 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
+                0x10007d78                vEventGroupSetBitsCallback
  .text.vListInitialise
-                0x10007e18       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
-                0x10007e18                vListInitialise
+                0x10007e08       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
+                0x10007e08                vListInitialise
  .text.vListInitialiseItem
-                0x10007e30        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
-                0x10007e30                vListInitialiseItem
+                0x10007e20        0x8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
+                0x10007e20                vListInitialiseItem
  .text.vListInsert
-                0x10007e38       0x30 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
-                0x10007e38                vListInsert
+                0x10007e28       0x30 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
+                0x10007e28                vListInsert
  .text.uxListRemove
-                0x10007e68       0x20 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
-                0x10007e68                uxListRemove
+                0x10007e58       0x20 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
+                0x10007e58                uxListRemove
  .text.xQueueGenericCreate
-                0x10007e88       0x9c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x10007e88                xQueueGenericCreate
+                0x10007e78       0x9c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x10007e78                xQueueGenericCreate
  .text.xQueueGenericSendFromISR
-                0x10007f24      0x134 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x10007f24                xQueueGenericSendFromISR
+                0x10007f14      0x134 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x10007f14                xQueueGenericSendFromISR
  .text.xQueueGiveFromISR
-                0x10008058       0x6c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x10008058                xQueueGiveFromISR
+                0x10008048       0x6c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x10008048                xQueueGiveFromISR
  .text.xQueueReceive
-                0x100080c4      0x2b4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x100080c4                xQueueReceive
+                0x100080b4      0x2b4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x100080b4                xQueueReceive
  .text.xQueueSemaphoreTake
-                0x10008378      0x2e8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x10008378                xQueueSemaphoreTake
+                0x10008368      0x2e8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x10008368                xQueueSemaphoreTake
  .text.vQueueAddToRegistry
-                0x10008660      0x168 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x10008660                vQueueAddToRegistry
+                0x10008650      0x168 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x10008650                vQueueAddToRegistry
  .text.vQueueWaitForMessageRestricted
-                0x100087c8       0xd0 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
-                0x100087c8                vQueueWaitForMessageRestricted
+                0x100087b8       0xd0 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x100087b8                vQueueWaitForMessageRestricted
  .text.prvAddNewTaskToReadyList
-                0x10008898      0x120 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008888      0x120 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
  .text.prvIdleTask
-                0x100089b8       0x60 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x100089a8       0x60 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
  .text.xTaskIncrementTick.part.0
-                0x10008a18      0x15c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008a08      0x15c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
  .text.xTaskCreate
-                0x10008b74      0x12c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008b74                xTaskCreate
+                0x10008b64      0x12c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008b64                xTaskCreate
  .text.vTaskStartScheduler
-                0x10008ca0       0xac CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008ca0                vTaskStartScheduler
+                0x10008c90       0xac CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008c90                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x10008d4c       0x10 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008d4c                vTaskSuspendAll
+                0x10008d3c       0x10 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008d3c                vTaskSuspendAll
  .text.xTaskResumeAll
-                0x10008d5c      0x188 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008d5c                xTaskResumeAll
+                0x10008d4c      0x188 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008d4c                xTaskResumeAll
  .text.vTaskDelay
-                0x10008ee4       0x7c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008ee4                vTaskDelay
+                0x10008ed4       0x7c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008ed4                vTaskDelay
  .text.xTaskGetTickCount
-                0x10008f60        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008f60                xTaskGetTickCount
+                0x10008f50        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008f50                xTaskGetTickCount
  .text.uxTaskGetNumberOfTasks
-                0x10008f6c        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008f6c                uxTaskGetNumberOfTasks
+                0x10008f5c        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008f5c                uxTaskGetNumberOfTasks
  .text.xTaskIncrementTick
-                0x10008f78       0x24 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008f78                xTaskIncrementTick
+                0x10008f68       0x24 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008f68                xTaskIncrementTick
  .text.vTaskSwitchContext
-                0x10008f9c       0xec CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10008f9c                vTaskSwitchContext
+                0x10008f8c       0xec CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10008f8c                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x10009088       0x98 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009088                vTaskPlaceOnEventList
+                0x10009078       0x98 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009078                vTaskPlaceOnEventList
  .text.vTaskPlaceOnUnorderedEventList
-                0x10009120       0xbc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009120                vTaskPlaceOnUnorderedEventList
+                0x10009110       0xbc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009110                vTaskPlaceOnUnorderedEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x100091dc       0xc4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x100091dc                vTaskPlaceOnEventListRestricted
+                0x100091cc       0xc4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x100091cc                vTaskPlaceOnEventListRestricted
  .text.xTaskRemoveFromEventList
-                0x100092a0       0xcc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x100092a0                xTaskRemoveFromEventList
+                0x10009290       0xcc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009290                xTaskRemoveFromEventList
  .text.vTaskRemoveFromUnorderedEventList
-                0x1000936c       0x94 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x1000936c                vTaskRemoveFromUnorderedEventList
+                0x1000935c       0x94 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x1000935c                vTaskRemoveFromUnorderedEventList
  .text.vTaskInternalSetTimeOutState
-                0x10009400       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009400                vTaskInternalSetTimeOutState
+                0x100093f0       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x100093f0                vTaskInternalSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x10009418       0x5c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009418                xTaskCheckForTimeOut
+                0x10009408       0x5c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009408                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x10009474        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009474                vTaskMissedYield
+                0x10009464        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009464                vTaskMissedYield
  .text.xTaskGetCurrentTaskHandle
-                0x10009480        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009480                xTaskGetCurrentTaskHandle
+                0x10009470        0xc CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009470                xTaskGetCurrentTaskHandle
  .text.xTaskPriorityInherit
-                0x1000948c       0x94 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x1000948c                xTaskPriorityInherit
+                0x1000947c       0x94 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x1000947c                xTaskPriorityInherit
  .text.xTaskPriorityDisinherit
-                0x10009520       0x64 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009520                xTaskPriorityDisinherit
+                0x10009510       0x64 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009510                xTaskPriorityDisinherit
  .text.vTaskPriorityDisinheritAfterTimeout
-                0x10009584       0x7c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009584                vTaskPriorityDisinheritAfterTimeout
+                0x10009574       0x7c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009574                vTaskPriorityDisinheritAfterTimeout
  .text.uxTaskResetEventItemValue
-                0x10009600       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009600                uxTaskResetEventItemValue
+                0x100095f0       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x100095f0                uxTaskResetEventItemValue
  .text.pvTaskIncrementMutexHeldCount
-                0x10009618       0x14 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
-                0x10009618                pvTaskIncrementMutexHeldCount
+                0x10009608       0x14 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x10009608                pvTaskIncrementMutexHeldCount
  .text.prvTimerTask
-                0x1000962c      0x38c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+                0x1000961c      0x38c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
  .text.xTimerCreateTimerTask
-                0x100099b8       0x88 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
-                0x100099b8                xTimerCreateTimerTask
+                0x100099a8       0x88 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+                0x100099a8                xTimerCreateTimerTask
  .text.xTimerPendFunctionCallFromISR
-                0x10009a40       0x2c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
-                0x10009a40                xTimerPendFunctionCallFromISR
+                0x10009a30       0x2c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+                0x10009a30                xTimerPendFunctionCallFromISR
  .text.exception_set_exclusive_handler
-                0x10009a6c       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
-                0x10009a6c                exception_set_exclusive_handler
+                0x10009a5c       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+                0x10009a5c                exception_set_exclusive_handler
  .text.pvPortMalloc
-                0x10009ab4       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
-                0x10009ab4                pvPortMalloc
+                0x10009aa4       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
+                0x10009aa4                pvPortMalloc
  .text.vPortFree
-                0x10009acc       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
-                0x10009acc                vPortFree
- .text          0x10009ae4       0x5c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
-                0x10009ae4                strlen
- .text          0x10009b40       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
-                0x10009b40                __libc_fini_array
- .text          0x10009b68      0x5b0 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
-                0x10009b68                _malloc_r
- .text          0x1000a118      0x288 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
-                0x1000a118                _malloc_trim_r
-                0x1000a1cc                _free_r
- .text          0x1000a3a0        0xc /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
-                0x1000a3a0                __errno
- .text          0x1000a3ac       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
-                0x1000a3ac                malloc
-                0x1000a3c0                free
- .text          0x1000a3d4        0x8 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
-                0x1000a3d4                __malloc_lock
-                0x1000a3d8                __malloc_unlock
- .text          0x1000a3dc       0x24 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
-                0x1000a3dc                _sbrk_r
- .text          0x1000a400       0x10 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
-                0x1000a400                atexit
- .text          0x1000a410       0x1c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
-                0x1000a410                sysconf
- .text          0x1000a42c       0x78 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
-                0x1000a42c                __register_exitproc
- .text.startup  0x1000a4a4       0x18 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x10009abc       0x18 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
+                0x10009abc                vPortFree
+ .text          0x10009ad4       0x5c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x10009ad4                strlen
+ .text          0x10009b30       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x10009b30                __libc_fini_array
+ .text          0x10009b58      0x5b0 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
+                0x10009b58                _malloc_r
+ .text          0x1000a108      0x288 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+                0x1000a108                _malloc_trim_r
+                0x1000a1bc                _free_r
+ .text          0x1000a390        0xc /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
+                0x1000a390                __errno
+ .text          0x1000a39c       0x28 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
+                0x1000a39c                malloc
+                0x1000a3b0                free
+ .text          0x1000a3c4        0x8 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
+                0x1000a3c4                __malloc_lock
+                0x1000a3c8                __malloc_unlock
+ .text          0x1000a3cc       0x24 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
+                0x1000a3cc                _sbrk_r
+ .text          0x1000a3f0       0x10 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x1000a3f0                atexit
+ .text          0x1000a400       0x1c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
+                0x1000a400                sysconf
+ .text          0x1000a41c       0x78 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x1000a41c                __register_exitproc
+ .text.startup  0x1000a494       0x18 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  *(.fini)
- .fini          0x1000a4bc        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crti.o
-                0x1000a4bc                _fini
- .fini.__stub   0x1000a4c0       0xd0 linker stubs
+ .fini          0x1000a4ac        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crti.o
+                0x1000a4ac                _fini
+ .fini.__stub   0x1000a4b0       0xd0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3958,224 +3958,224 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x1000a590                        . = ALIGN (0x4)
-                0x1000a590                        PROVIDE (__preinit_array_start = .)
+                0x1000a580                        . = ALIGN (0x4)
+                0x1000a580                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x1000a590        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a590                __pre_init_runtime_init_early_resets
+                0x1000a580        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a580                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x1000a594        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a594                __pre_init_runtime_init_usb_power_down
+                0x1000a584        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a584                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x1000a598        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x1000a588        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x1000a59c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x1000a58c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x1000a5a0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x1000a590        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x1000a5a4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x1000a594        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x1000a5a8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a5a8                __pre_init_runtime_init_clocks
+                0x1000a598        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a598                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x1000a5ac        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a5ac                __pre_init_runtime_init_post_clock_resets
+                0x1000a59c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a59c                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x1000a5b0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a5b0                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x1000a5a0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a5a0                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x1000a5b4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a5b4                __pre_init_runtime_init_spin_locks_reset
+                0x1000a5a4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a5a4                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x1000a5b8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x1000a5b8                __pre_init_runtime_init_mutex
+                0x1000a5a8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x1000a5a8                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x1000a5bc        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000a5bc                __pre_init_runtime_init_install_ram_vector_table
+                0x1000a5ac        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000a5ac                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x1000a5c0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x1000a5c0                __pre_init_runtime_init_default_alarm_pool
+                0x1000a5b0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x1000a5b0                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x1000a5c4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x1000a5c4                __pre_init_first_per_core_initializer
+                0x1000a5b4        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000a5b4                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x1000a5c8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000a5c8                __pre_init_runtime_init_per_core_irq_priorities
+                0x1000a5b8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000a5b8                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x1000a5cc                        PROVIDE (__preinit_array_end = .)
-                0x1000a5cc                        . = ALIGN (0x4)
-                0x1000a5cc                        PROVIDE (__init_array_start = .)
+                0x1000a5bc                        PROVIDE (__preinit_array_end = .)
+                0x1000a5bc                        . = ALIGN (0x4)
+                0x1000a5bc                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x1000a5cc        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x1000a5bc        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
  .init_array.01000
-                0x1000a5d0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x1000a5c0        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  *(.init_array)
- .init_array    0x1000a5d4        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
- .init_array    0x1000a5d8        0x4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
-                0x1000a5dc                        PROVIDE (__init_array_end = .)
-                0x1000a5dc                        . = ALIGN (0x4)
-                0x1000a5dc                        PROVIDE (__fini_array_start = .)
+ .init_array    0x1000a5c4        0x4 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x1000a5c8        0x4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x1000a5cc                        PROVIDE (__init_array_end = .)
+                0x1000a5cc                        . = ALIGN (0x4)
+                0x1000a5cc                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x1000a5dc                        PROVIDE (__fini_array_end = .)
+                0x1000a5cc                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x1000a5dc        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x1000a5dc                        . = ALIGN (0x4)
+ .eh_frame      0x1000a5cc        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x1000a5cc                        . = ALIGN (0x4)
 
-.glue_7         0x1000a5dc        0x0
- .glue_7        0x1000a5dc        0x0 linker stubs
+.glue_7         0x1000a5cc        0x0
+ .glue_7        0x1000a5cc        0x0 linker stubs
 
-.glue_7t        0x1000a5dc        0x0
- .glue_7t       0x1000a5dc        0x0 linker stubs
+.glue_7t        0x1000a5cc        0x0
+ .glue_7t       0x1000a5cc        0x0 linker stubs
 
-.vfp11_veneer   0x1000a5dc        0x0
- .vfp11_veneer  0x1000a5dc        0x0 linker stubs
+.vfp11_veneer   0x1000a5cc        0x0
+ .vfp11_veneer  0x1000a5cc        0x0 linker stubs
 
-.v4_bx          0x1000a5dc        0x0
- .v4_bx         0x1000a5dc        0x0 linker stubs
+.v4_bx          0x1000a5cc        0x0
+ .v4_bx         0x1000a5cc        0x0 linker stubs
 
-.iplt           0x1000a5dc        0x0
- .iplt          0x1000a5dc        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x1000a5cc        0x0
+ .iplt          0x1000a5cc        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x1000a5e0      0x728
+.rodata         0x1000a5d0      0x728
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.heartbeat.str1.4
-                0x1000a5e0      0x228 CMakeFiles/lab7.dir/lab7.c.o
+                0x1000a5d0      0x228 CMakeFiles/lab7.dir/lab7.c.o
                                  0x15 (size before relaxing)
  .rodata.sw2_click.str1.4
-                0x1000a808        0xc CMakeFiles/lab7.dir/lab7.c.o
+                0x1000a7f8        0xc CMakeFiles/lab7.dir/lab7.c.o
  .rodata.sw1_click.str1.4
-                0x1000a808        0xc CMakeFiles/lab7.dir/lab7.c.o
+                0x1000a7f8        0xc CMakeFiles/lab7.dir/lab7.c.o
  .rodata.main.str1.4
-                0x1000a808       0x26 CMakeFiles/lab7.dir/lab7.c.o
+                0x1000a7f8       0x26 CMakeFiles/lab7.dir/lab7.c.o
  .rodata.motor_init.str1.4
-                0x1000a808        0xc CMakeFiles/lab7.dir/motor.c.o
+                0x1000a7f8        0xc CMakeFiles/lab7.dir/motor.c.o
  .rodata.motor_set_position.str1.4
-                0x1000a808       0x11 CMakeFiles/lab7.dir/motor.c.o
+                0x1000a7f8       0x11 CMakeFiles/lab7.dir/motor.c.o
  .rodata.__func__.4
-                0x1000a808       0x13 CMakeFiles/lab7.dir/motor.c.o
- *fill*         0x1000a81b        0x1 
+                0x1000a7f8       0x13 CMakeFiles/lab7.dir/motor.c.o
+ *fill*         0x1000a80b        0x1 
  .rodata.__func__.5
-                0x1000a81c        0xb CMakeFiles/lab7.dir/motor.c.o
+                0x1000a80c        0xb CMakeFiles/lab7.dir/motor.c.o
  .rodata.ConfigurePWM.str1.4
-                0x1000a827       0x18 CMakeFiles/lab7.dir/pwm.c.o
- *fill*         0x1000a827        0x1 
+                0x1000a817       0x18 CMakeFiles/lab7.dir/pwm.c.o
+ *fill*         0x1000a817        0x1 
  .rodata.__func__.0
-                0x1000a828        0xd CMakeFiles/lab7.dir/pwm.c.o
+                0x1000a818        0xd CMakeFiles/lab7.dir/pwm.c.o
  .rodata.panic.str1.4
-                0x1000a835       0x12 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x1000a825       0x12 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.panic_unsupported.str1.4
-                0x1000a835        0xe CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x1000a825        0xe CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.spin_lock_claim_unused.str1.4
-                0x1000a835       0x1b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x1000a825       0x1b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .rodata.user_irq_claim_unused.str1.4
-                0x1000a835       0x1b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000a825       0x1b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x1000a835       0x22 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x1000a825       0x22 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .rodata.hard_assertion_failure.str1.4
-                0x1000a835        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000a825        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.__wrap_malloc.str1.4
-                0x1000a835        0xe CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x1000a825        0xe CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
  .rodata.str1.4
-                0x1000a835       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- *fill*         0x1000a835        0x3 
+                0x1000a825       0x3c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ *fill*         0x1000a825        0x3 
  .rodata.__bi_84
-                0x1000a838        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a828        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x1000a844        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a834        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x1000a850        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a840        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x1000a85c        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a84c        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x1000a868        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a858        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x1000a874        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a864        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x1000a880        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000a870        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata._ftoa.str1.4
-                0x1000a88c       0x15 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000a87c       0x15 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata._vsnprintf
-                0x1000a88c      0x19c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000a87c      0x19c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.pow10.0
-                0x1000aa28       0x50 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x1000aa18       0x50 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.crlf_str.0
-                0x1000aa78        0x2 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- *fill*         0x1000aa7a        0x2 
+                0x1000aa68        0x2 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ *fill*         0x1000aa6a        0x2 
  .rodata._resetd_driver
-                0x1000aa7c       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1000aa6c       0x20 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .rodata.desc_ms_os_20
-                0x1000aa9c       0xa6 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- *fill*         0x1000ab42        0x2 
+                0x1000aa8c       0xa6 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ *fill*         0x1000ab32        0x2 
  .rodata.desc_bos
-                0x1000ab44       0x21 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-                0x1000ab44                desc_bos
+                0x1000ab34       0x21 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x1000ab34                desc_bos
  .rodata.str1.4
-                0x1000ab65       0x13 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- *fill*         0x1000ab65        0x3 
+                0x1000ab55       0x13 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ *fill*         0x1000ab55        0x3 
  .rodata.__bi_202.0
-                0x1000ab68        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1000ab58        0xc CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .rodata.str1.4
-                0x1000ab74       0x2a CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1000ab64       0x2a CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_str
-                0x1000ab74       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1000ab64       0x18 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_cfg
-                0x1000ab8c       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1000ab7c       0x54 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.usbd_desc_device
-                0x1000abe0       0x12 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x1000abd0       0x12 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .rodata.str1.4
-                0x1000abf2       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x1000abe2       0x14 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .rodata.str1.4
-                0x1000abf2       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- *fill*         0x1000abf2        0x2 
+                0x1000abe2       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ *fill*         0x1000abe2        0x2 
  .rodata.tud_task_ext
-                0x1000abf4       0x8c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .rodata        0x1000ac80       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000abe4       0x8c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .rodata        0x1000ac70       0x1c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata._usbd_driver
-                0x1000ac9c       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x1000ac8c       0x40 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .rodata.uxTopUsedPriority
-                0x1000acdc        0x4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x1000accc        0x4 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
  .rodata.prvTimerTask
-                0x1000ace0       0x28 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+                0x1000acd0       0x28 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
  .rodata.xTimerCreateTimerTask.str1.4
-                0x1000ad08       0x10 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
-                0x1000ad18                        . = ALIGN (0x4)
+                0x1000acf8       0x10 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+                0x1000ad08                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x1000ad18                        . = ALIGN (0x4)
+                0x1000ad08                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1000ad08                        __exidx_start = .
+                0x1000acf8                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x1000ad08                        __exidx_end = .
-                0x1000ad18                        . = ALIGN (0x4)
-                0x1000ad08                        __binary_info_start = .
+                0x1000acf8                        __exidx_end = .
+                0x1000ad08                        . = ALIGN (0x4)
+                0x1000acf8                        __binary_info_start = .
 
-.binary_info    0x1000ad08       0x20
+.binary_info    0x1000acf8       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x1000ad08        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000acf8        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x1000ad0c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000acfc        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x1000ad10        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000ad00        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x1000ad14        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000ad04        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x1000ad18        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000ad08        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x1000ad1c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000ad0c        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr26
-                0x1000ad20        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000ad10        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
  .binary_info.__bi_ptr202
-                0x1000ad24        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-                0x1000ad28                        __binary_info_end = .
-                0x1000ad28                        . = ALIGN (0x4)
+                0x1000ad14        0x4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x1000ad18                        __binary_info_end = .
+                0x1000ad18                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -4189,7 +4189,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0     0x15d0 load address 0x1000ad28
+.data           0x200000c0     0x15d0 load address 0x1000ad18
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -4317,23 +4317,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x20001690                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20001690        0x0 load address 0x1000c2f8
+                0x20001690        0x0 load address 0x1000c2e8
  .tm_clone_table
                 0x20001690        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20001690        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20001690        0x0 load address 0x1000c2f8
+.igot.plt       0x20001690        0x0 load address 0x1000c2e8
  .igot.plt      0x20001690        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20001690        0x0 load address 0x1000c2f8
+.tdata          0x20001690        0x0 load address 0x1000c2e8
                 0x20001690                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20001690                        __tdata_end = .
                 0x20001690                        PROVIDE (__data_end__ = .)
-                0x1000ad28                        __etext = LOADADDR (.data)
+                0x1000ad18                        __etext = LOADADDR (.data)
 
-.tbss           0x20001690        0x0 load address 0x1000c2f8
+.tbss           0x20001690        0x0 load address 0x1000c2e8
                 0x20001690                        . = ALIGN (0x4)
                 0x20001690                        __bss_start__ = .
                 0x20001690                        __tls_base = .
@@ -4341,7 +4341,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.tcommon)
                 0x20001690                        __tls_end = .
 
-.bss            0x20001690     0x144c load address 0x1000c2f8
+.bss            0x20001690     0x144c load address 0x1000c2e8
                 0x20001690                        . = ALIGN (0x4)
                 0x20001690                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -4561,26 +4561,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *fill*         0x20002adb        0x1 
                 0x20002adc                        __bss_end__ = .
 
-.heap           0x20002adc      0x800 load address 0x1000c2f8
+.heap           0x20002adc      0x800 load address 0x1000c2e8
                 0x20002adc                        __end__ = .
                 0x20002adc                        end = __end__
  *(.heap*)
  .heap          0x20002adc      0x800 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x1000c2f8
+.scratch_x      0x20040000        0x0 load address 0x1000c2e8
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x1000c2f8                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1000c2e8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x1000c2f8
+.scratch_y      0x20041000        0x0 load address 0x1000c2e8
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x1000c2f8                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1000c2e8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy   0x20040000      0x800
  *(.stack1*)
@@ -4593,9 +4593,9 @@ LOAD /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x1000c2f8        0x0
+.flash_end      0x1000c2e8        0x0
  *(.embedded_end_block*)
-                0x1000c2f8                        PROVIDE (__flash_binary_end = .)
+                0x1000c2e8                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -5129,133 +5129,133 @@ LOAD linker stubs
  .debug_abbrev  0x0000cd78      0x1da /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_loclists
-                0x00000000    0x24def
+                0x00000000    0x24e54
  .debug_loclists
                 0x00000000      0x483 CMakeFiles/lab7.dir/lab7.c.o
  .debug_loclists
-                0x00000483      0xc3d CMakeFiles/lab7.dir/motor.c.o
+                0x00000483      0xc4d CMakeFiles/lab7.dir/motor.c.o
  .debug_loclists
-                0x000010c0      0x2b4 CMakeFiles/lab7.dir/pwm.c.o
+                0x000010d0      0x309 CMakeFiles/lab7.dir/pwm.c.o
  .debug_loclists
-                0x00001374     0x1a7f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x000013d9     0x1a7f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
-                0x00002df3       0x53 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+                0x00002e58       0x53 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
  .debug_loclists
-                0x00002e46      0x349 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00002eab      0x349 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_loclists
-                0x0000318f      0x108 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x000031f4      0x108 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_loclists
-                0x00003297       0x7d CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x000032fc       0x7d CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_loclists
-                0x00003314     0x11e4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00003379     0x11e4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_loclists
-                0x000044f8       0x41 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x0000455d       0x41 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_loclists
-                0x00004539      0xb84 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x0000459e      0xb84 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_loclists
-                0x000050bd       0xb6 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+                0x00005122       0xb6 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
  .debug_loclists
-                0x00005173     0x27e3 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x000051d8     0x27e3 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
  .debug_loclists
-                0x00007956     0x19f1 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x000079bb     0x19f1 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_loclists
-                0x00009347     0x2b7c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x000093ac     0x2b7c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_loclists
-                0x0000bec3      0x1e0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x0000bf28      0x1e0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_loclists
-                0x0000c0a3      0x532 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+                0x0000c108      0x532 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
  .debug_loclists
-                0x0000c5d5       0x47 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000c63a       0x47 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_loclists
-                0x0000c61c      0x351 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000c681      0x351 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_loclists
-                0x0000c96d       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000c9d2       0x48 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_loclists
-                0x0000c9b5       0x7e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000ca1a       0x7e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_loclists
-                0x0000ca33      0x139 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x0000ca98      0x139 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_loclists
-                0x0000cb6c       0x74 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x0000cbd1       0x74 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_loclists
-                0x0000cbe0       0x3d CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000cc45       0x3d CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000cc1d       0x59 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x0000cc82       0x59 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000cc76      0x289 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x0000ccdb      0x289 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
  .debug_loclists
-                0x0000ceff     0x355f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000cf64     0x355f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_loclists
-                0x0001045e      0x44e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x000104c3      0x44e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_loclists
-                0x000108ac      0xf4f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00010911      0xf4f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_loclists
-                0x000117fb      0x266 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+                0x00011860      0x266 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
  .debug_loclists
-                0x00011a61      0x7cb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+                0x00011ac6      0x7cb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
  .debug_loclists
-                0x0001222c       0xed CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+                0x00012291       0xed CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
  .debug_loclists
-                0x00012319      0x3d5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+                0x0001237e      0x3d5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
  .debug_loclists
-                0x000126ee      0xb24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+                0x00012753      0xb24 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
  .debug_loclists
-                0x00013212     0x1bd5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+                0x00013277     0x1bd5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
  .debug_loclists
-                0x00014de7      0x719 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+                0x00014e4c      0x719 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
  .debug_loclists
-                0x00015500     0x21ed CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+                0x00015565     0x21ed CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
  .debug_loclists
-                0x000176ed      0x45e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+                0x00017752      0x45e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
  .debug_loclists
-                0x00017b4b      0xdc9 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+                0x00017bb0      0xdc9 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
  .debug_loclists
-                0x00018914      0x7e5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+                0x00018979      0x7e5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
  .debug_loclists
-                0x000190f9      0xf80 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+                0x0001915e      0xf80 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
  .debug_loclists
-                0x0001a079     0x1fdb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+                0x0001a0de     0x1fdb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
  .debug_loclists
-                0x0001c054      0x6b8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+                0x0001c0b9      0x6b8 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
  .debug_loclists
-                0x0001c70c      0xb9c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
+                0x0001c771      0xb9c CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
  .debug_loclists
-                0x0001d2a8       0x8f CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
+                0x0001d30d       0x8f CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
  .debug_loclists
-                0x0001d337     0x21c9 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+                0x0001d39c     0x21c9 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
  .debug_loclists
-                0x0001f500     0x263d CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+                0x0001f565     0x263d CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
  .debug_loclists
-                0x00021b3d      0xf26 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+                0x00021ba2      0xf26 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
  .debug_loclists
-                0x00022a63      0x2cb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+                0x00022ac8      0x2cb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
  .debug_loclists
-                0x00022d2e      0xbe1 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x00022d93      0xbe1 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
  .debug_loclists
-                0x0002390f       0x6f CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
+                0x00023974       0x6f CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
  .debug_loclists
-                0x0002397e       0x57 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x000239e3       0x57 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
  .debug_loclists
-                0x000239d5       0x2c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+                0x00023a3a       0x2c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
  .debug_loclists
-                0x00023a01      0xad9 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
+                0x00023a66      0xad9 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
  .debug_loclists
-                0x000244da      0x3ab /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+                0x0002453f      0x3ab /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
  .debug_loclists
-                0x00024885       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
+                0x000248ea       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
  .debug_loclists
-                0x000248cf       0x52 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
+                0x00024934       0x52 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
  .debug_loclists
-                0x00024921       0x2b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+                0x00024986       0x2b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
  .debug_loclists
-                0x0002494c      0x1dd /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+                0x000249b1      0x1dd /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
  .debug_loclists
-                0x00024b29       0x3b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
+                0x00024b8e       0x3b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
  .debug_loclists
-                0x00024b64       0x59 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
+                0x00024bc9       0x59 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
  .debug_loclists
-                0x00024bbd       0xff /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+                0x00024c22       0xff /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
  .debug_loclists
-                0x00024cbc      0x133 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+                0x00024d21      0x133 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_aranges  0x00000000     0x1f68
  .debug_aranges
@@ -5544,85 +5544,85 @@ LOAD linker stubs
  .debug_rnglists
                 0x00005701       0x30 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
-.debug_line     0x00000000    0x2fe45
+.debug_line     0x00000000    0x2fe38
  .debug_line    0x00000000      0x9ce CMakeFiles/lab7.dir/lab7.c.o
- .debug_line    0x000009ce      0xb86 CMakeFiles/lab7.dir/motor.c.o
- .debug_line    0x00001554      0x52e CMakeFiles/lab7.dir/pwm.c.o
- .debug_line    0x00001a82     0x1bbb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x0000363d      0x1c5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
- .debug_line    0x00003802      0x1ec CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x000039ee      0x849 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x00004237      0x42b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00004662      0x315 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x00004977     0x170a CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x00006081      0x240 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x000062c1     0x1615 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x000078d6      0x36c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
- .debug_line    0x00007c42     0x33a0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x0000afe2     0x1ca4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0000cc86     0x2095 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000ed1b      0x45f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000f17a      0x731 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
- .debug_line    0x0000f8ab      0x29f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000fb4a      0x3d3 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000ff1d      0x2ba CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x000101d7      0x27c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x00010453      0x62b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x00010a7e      0x4ae CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x00010f2c      0x108 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x00011034      0x2a9 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x000112dd      0x452 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x0001172f      0x3d0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x00011aff      0x66d CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x0001216c       0x61 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x000121cd      0x3d2 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x0001259f      0x2e5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x00012884      0x195 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x00012a19      0x401 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_line    0x00012e1a       0x94 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x00012eae      0x160 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x0001300e     0x1c02 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x00014c10       0xa2 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x00014cb2      0x7ef CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x000154a1     0x136b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x0001680c      0x467 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
- .debug_line    0x00016c73     0x1104 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
- .debug_line    0x00017d77      0x314 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
- .debug_line    0x0001808b      0x578 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
- .debug_line    0x00018603      0xdac CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
- .debug_line    0x000193af     0x1d9e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
- .debug_line    0x0001b14d      0xbd8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
- .debug_line    0x0001bd25     0x27b4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
- .debug_line    0x0001e4d9      0x5d9 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
- .debug_line    0x0001eab2      0xfd6 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
- .debug_line    0x0001fa88      0x9e7 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
- .debug_line    0x0002046f     0x1149 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
- .debug_line    0x000215b8     0x1993 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
- .debug_line    0x00022f4b     0x146b CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
- .debug_line    0x000243b6      0x903 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
- .debug_line    0x00024cb9      0x355 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
- .debug_line    0x0002500e     0x2beb CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
- .debug_line    0x00027bf9     0x33bb CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
- .debug_line    0x0002afb4      0xe65 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
- .debug_line    0x0002be19      0x50e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
- .debug_line    0x0002c327     0x1451 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
- .debug_line    0x0002d778      0x202 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
- .debug_line    0x0002d97a       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0002d9c4      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
- .debug_line    0x0002db72       0xd1 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
- .debug_line    0x0002dc43      0x93f /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
- .debug_line    0x0002e582      0x528 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
- .debug_line    0x0002eaaa      0x11a /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
- .debug_line    0x0002ebc4      0x179 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
- .debug_line    0x0002ed3d      0x15b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
- .debug_line    0x0002ee98      0x19b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
- .debug_line    0x0002f033       0xca /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
- .debug_line    0x0002f0fd       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
- .debug_line    0x0002f1e8      0x592 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
- .debug_line    0x0002f77a       0xec /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
- .debug_line    0x0002f866      0x1f2 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
- .debug_line    0x0002fa58      0x167 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
- .debug_line    0x0002fbbf      0x286 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
+ .debug_line    0x000009ce      0xb7e CMakeFiles/lab7.dir/motor.c.o
+ .debug_line    0x0000154c      0x529 CMakeFiles/lab7.dir/pwm.c.o
+ .debug_line    0x00001a75     0x1bbb CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x00003630      0x1c5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+ .debug_line    0x000037f5      0x1ec CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x000039e1      0x849 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x0000422a      0x42b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00004655      0x315 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x0000496a     0x170a CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x00006074      0x240 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x000062b4     0x1615 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x000078c9      0x36c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+ .debug_line    0x00007c35     0x33a0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x0000afd5     0x1ca4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000cc79     0x2095 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000ed0e      0x45f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000f16d      0x731 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+ .debug_line    0x0000f89e      0x29f CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000fb3d      0x3d3 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000ff10      0x2ba CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x000101ca      0x27c CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x00010446      0x62b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x00010a71      0x4ae CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x00010f1f      0x108 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x00011027      0x2a9 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x000112d0      0x452 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x00011722      0x3d0 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x00011af2      0x66d CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x0001215f       0x61 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x000121c0      0x3d2 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x00012592      0x2e5 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x00012877      0x195 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00012a0c      0x401 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_line    0x00012e0d       0x94 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x00012ea1      0x160 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x00013001     0x1c02 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x00014c03       0xa2 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x00014ca5      0x7ef CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x00015494     0x136b CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x000167ff      0x467 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+ .debug_line    0x00016c66     0x1104 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+ .debug_line    0x00017d6a      0x314 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+ .debug_line    0x0001807e      0x578 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+ .debug_line    0x000185f6      0xdac CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+ .debug_line    0x000193a2     0x1d9e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+ .debug_line    0x0001b140      0xbd8 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+ .debug_line    0x0001bd18     0x27b4 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+ .debug_line    0x0001e4cc      0x5d9 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+ .debug_line    0x0001eaa5      0xfd6 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+ .debug_line    0x0001fa7b      0x9e7 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+ .debug_line    0x00020462     0x1149 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+ .debug_line    0x000215ab     0x1993 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+ .debug_line    0x00022f3e     0x146b CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.o
+ .debug_line    0x000243a9      0x903 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/event_groups.c.o
+ .debug_line    0x00024cac      0x355 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/list.c.o
+ .debug_line    0x00025001     0x2beb CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/queue.c.o
+ .debug_line    0x00027bec     0x33bb CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/tasks.c.o
+ .debug_line    0x0002afa7      0xe65 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/timers.c.o
+ .debug_line    0x0002be0c      0x50e CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+ .debug_line    0x0002c31a     0x1451 CMakeFiles/lab7.dir/home/tinypc/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+ .debug_line    0x0002d76b      0x202 CMakeFiles/lab7.dir/home/tinypc/FreeRTOS-LTS/FreeRTOS/FreeRTOS-Kernel/portable/MemMang/heap_3.c.o
+ .debug_line    0x0002d96d       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0002d9b7      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+ .debug_line    0x0002db65       0xd1 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-fini.o)
+ .debug_line    0x0002dc36      0x93f /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mallocr.o)
+ .debug_line    0x0002e575      0x528 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-freer.o)
+ .debug_line    0x0002ea9d      0x11a /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-errno.o)
+ .debug_line    0x0002ebb7      0x179 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
+ .debug_line    0x0002ed30      0x15b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-mlock.o)
+ .debug_line    0x0002ee8b      0x19b /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sbrkr.o)
+ .debug_line    0x0002f026       0xca /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-atexit.o)
+ .debug_line    0x0002f0f0       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-impure.o)
+ .debug_line    0x0002f1db      0x592 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-findfp.o)
+ .debug_line    0x0002f76d       0xec /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-sysconf.o)
+ .debug_line    0x0002f859      0x1f2 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-reent.o)
+ .debug_line    0x0002fa4b      0x167 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__atexit.o)
+ .debug_line    0x0002fbb2      0x286 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-__call_atexit.o)
 
 .debug_str      0x00000000     0xc00f
  .debug_str     0x00000000     0xc00f CMakeFiles/lab7.dir/lab7.c.o
