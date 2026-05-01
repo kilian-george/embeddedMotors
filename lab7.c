@@ -38,14 +38,13 @@ static SemaphoreHandle_t xmotorMoveSem = NULL;
 void gpio_int_callback(uint gpio, uint32_t events_unused) 
 {
     if (gpio == PHA_PIN) {
-        RPMarr[(arrCount % 50)] = to_ms_since_boot(get_absolute_time());
-        arrCount++;
+        //RPMarr[(arrCount % 50)] = to_ms_since_boot(get_absolute_time());
+        //arrCount++;
         if (gpio_get(PHB_PIN))
             encoderTicks++;
         else
             encoderTicks--;
     }
-
     
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
@@ -68,6 +67,7 @@ void hardware_init(void)
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
+    /*
     gpio_init(PHA_PIN);
     //gpio_pull_up(PHA_PIN);
     gpio_set_dir(PHA_PIN, GPIO_IN);
@@ -77,7 +77,7 @@ void hardware_init(void)
     //gpio_pull_up(PHB_PIN);
     gpio_set_dir(PHB_PIN, GPIO_IN);
     gpio_set_irq_enabled_with_callback(PHB_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_int_callback);
-
+*/
     gpio_init(SW1_PIN);
     gpio_pull_up(SW1_PIN);
     gpio_set_dir(SW1_PIN, GPIO_IN);
@@ -89,9 +89,9 @@ void hardware_init(void)
 void heartbeat(void * notUsed)
 {   
     while (true) {
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(100));
         gpio_put(LED_PIN, 1);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(100));
         gpio_put(LED_PIN, 0);
 
         // uint32_t rpm = rpmCalc();

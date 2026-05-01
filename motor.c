@@ -54,6 +54,7 @@ static motor_status_t _motor_status = M_IDLE;
 static int32_t _motorSetpointPosition = 1000;
 
 void phase_change_irq(unsigned int gpio, long unsigned int event);
+void gpio_int_callback(uint gpio, uint32_t events_unused);
 static uint32_t _readTimer(void);
 static void _pidPositionServo( void *notUsed );
 
@@ -78,8 +79,8 @@ void motor_init(void)
     // gpio_init(ENA_PIN);
     // gpio_set_function(ENA_PIN, GPIO_FUNC_PWM);
 
-    gpio_set_irq_enabled_with_callback(PHA_PIN, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true, &phase_change_irq);    
-    gpio_set_irq_enabled(PHB_PIN, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true);    
+    gpio_set_irq_enabled_with_callback(PHA_PIN, GPIO_IRQ_EDGE_FALL, true, &gpio_int_callback);    
+    //gpio_set_irq_enabled(PHB_PIN, GPIO_IRQ_EDGE_FALL, true);    
 
     ConfigurePWM(30000);
     setPWMDuty(10);
@@ -142,6 +143,13 @@ void motorDrive(int32_t drive)
     //UARTprintf("    !! sp:%d, i1:%d, i2:%d, pwm%d\n", sp, in1, in2, abs(sp));
 }
 
+uint8_t getPHA(){
+    return PHA_PIN;
+}
+
+uint8_t getPHB(){
+    return PHB_PIN;
+}
 
 static void _pidPositionServo( void *notUsed )
 {
