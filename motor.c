@@ -10,9 +10,11 @@
 #include "motor.h"
 #include "pwm.h"
 
-#define KP 5
+// 4 0 2 works good     
+
+#define KP 4
 #define KI 0
-#define KD 1
+#define KD 3.5
 
 typedef enum {
         IRQ_LEVEL_LOW =  0x1,
@@ -30,8 +32,6 @@ const uint8_t CT1_PIN = 12;
 const uint8_t CT2_PIN = 13;
 
 //const uint8_t ENA_PIN = 11;
-
-
 
 const uint8_t PULSE_PIN = 0;
 

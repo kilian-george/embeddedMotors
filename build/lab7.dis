@@ -37,23 +37,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  16 .comment      0000004c  00000000  00000000  0000d6b8  2**0
                   CONTENTS, READONLY
- 17 .debug_info   00045c92  00000000  00000000  0000d704  2**0
+ 17 .debug_info   00045c9b  00000000  00000000  0000d704  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_abbrev 0000cf52  00000000  00000000  00053396  2**0
+ 18 .debug_abbrev 0000cf52  00000000  00000000  0005339f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_loclists 00024e54  00000000  00000000  000602e8  2**0
+ 19 .debug_loclists 00024e17  00000000  00000000  000602f1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_aranges 00001f68  00000000  00000000  00085140  2**3
+ 20 .debug_aranges 00001f68  00000000  00000000  00085108  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_rnglists 00005731  00000000  00000000  000870a8  2**0
+ 21 .debug_rnglists 00005731  00000000  00000000  00087070  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_line   0002fe38  00000000  00000000  0008c7d9  2**0
+ 22 .debug_line   0002fe42  00000000  00000000  0008c7a1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_str    0000c00f  00000000  00000000  000bc611  2**0
+ 23 .debug_str    0000c00f  00000000  00000000  000bc5e3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .debug_frame  00004678  00000000  00000000  000c8620  2**2
+ 24 .debug_frame  00004678  00000000  00000000  000c85f4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 25 .debug_line_str 000002e2  00000000  00000000  000ccc98  2**0
+ 25 .debug_line_str 000002e2  00000000  00000000  000ccc6c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 /home/tinypc/cs466_s26/lab7/build/lab7.elf:     file format elf32-littlearm
@@ -469,7 +469,7 @@ Disassembly of section .text:
 10000414:	5858      	ldr	r0, [r3, r1]
 10000416:	4643      	mov	r3, r8
 10000418:	6018      	str	r0, [r3, #0]
-1000041a:	f000 f9cd 	bl	100007b8 <motor_set_position>
+1000041a:	f000 f9d3 	bl	100007c4 <motor_set_position>
 1000041e:	e7e6      	b.n	100003ee <sw1_click+0x22>
 10000420:	1000a5f4 	.word	0x1000a5f4
 10000424:	20001038 	.word	0x20001038
@@ -526,7 +526,7 @@ Disassembly of section .text:
 10000490:	d500      	bpl.n	10000494 <gpio_int_callback+0x60>
 10000492:	1c48      	adds	r0, r1, #1
 10000494:	6018      	str	r0, [r3, #0]
-10000496:	f000 f989 	bl	100007ac <set_postion>
+10000496:	f000 f98f 	bl	100007b8 <set_postion>
 1000049a:	e7d9      	b.n	10000450 <gpio_int_callback+0x1c>
 1000049c:	4b04      	ldr	r3, [pc, #16]	@ (100004b0 <gpio_int_callback+0x7c>)
 1000049e:	e7dd      	b.n	1000045c <gpio_int_callback+0x28>
@@ -649,7 +649,7 @@ Disassembly of section .text:
 100005b8:	2400      	movs	r4, #0
 100005ba:	6018      	str	r0, [r3, #0]
 100005bc:	f7ff ff7a 	bl	100004b4 <hardware_init>
-100005c0:	f000 f8a4 	bl	1000070c <motor_init>
+100005c0:	f000 f8aa 	bl	10000718 <motor_init>
 100005c4:	2301      	movs	r3, #1
 100005c6:	2280      	movs	r2, #128	@ 0x80
 100005c8:	4910      	ldr	r1, [pc, #64]	@ (1000060c <main+0x80>)
@@ -693,15 +693,15 @@ Disassembly of section .text:
 10000628:	4647      	mov	r7, r8
 1000062a:	46ce      	mov	lr, r9
 1000062c:	4699      	mov	r9, r3
-1000062e:	4b33      	ldr	r3, [pc, #204]	@ (100006fc <_pidPositionServo+0xd8>)
+1000062e:	4b35      	ldr	r3, [pc, #212]	@ (10000704 <_pidPositionServo+0xe0>)
 10000630:	b580      	push	{r7, lr}
 10000632:	4698      	mov	r8, r3
-10000634:	4f32      	ldr	r7, [pc, #200]	@ (10000700 <_pidPositionServo+0xdc>)
+10000634:	4f34      	ldr	r7, [pc, #208]	@ (10000708 <_pidPositionServo+0xe4>)
 10000636:	e014      	b.n	10000662 <_pidPositionServo+0x3e>
 10000638:	2363      	movs	r3, #99	@ 0x63
 1000063a:	425b      	negs	r3, r3
 1000063c:	2800      	cmp	r0, #0
-1000063e:	dd46      	ble.n	100006ce <_pidPositionServo+0xaa>
+1000063e:	dd4a      	ble.n	100006d6 <_pidPositionServo+0xb2>
 10000640:	22d0      	movs	r2, #208	@ 0xd0
 10000642:	2180      	movs	r1, #128	@ 0x80
 10000644:	0612      	lsls	r2, r2, #24
@@ -713,7 +713,7 @@ Disassembly of section .text:
 10000650:	17da      	asrs	r2, r3, #31
 10000652:	1898      	adds	r0, r3, r2
 10000654:	4050      	eors	r0, r2
-10000656:	f000 f91b 	bl	10000890 <setPWMDuty>
+10000656:	f000 f921 	bl	1000089c <setPWMDuty>
 1000065a:	2001      	movs	r0, #1
 1000065c:	f008 fc3a 	bl	10008ed4 <vTaskDelay>
 10000660:	46b1      	mov	r9, r6
@@ -725,7 +725,7 @@ Disassembly of section .text:
 1000066c:	1998      	adds	r0, r3, r6
 1000066e:	f002 f9bb 	bl	100029e8 <__wrap___aeabi_i2d>
 10000672:	2200      	movs	r2, #0
-10000674:	4b23      	ldr	r3, [pc, #140]	@ (10000704 <_pidPositionServo+0xe0>)
+10000674:	4b25      	ldr	r3, [pc, #148]	@ (1000070c <_pidPositionServo+0xe8>)
 10000676:	f002 f948 	bl	1000290a <__wrap___aeabi_dmul>
 1000067a:	2200      	movs	r2, #0
 1000067c:	2300      	movs	r3, #0
@@ -735,7 +735,7 @@ Disassembly of section .text:
 10000686:	000d      	movs	r5, r1
 10000688:	f002 f9ae 	bl	100029e8 <__wrap___aeabi_i2d>
 1000068c:	2200      	movs	r2, #0
-1000068e:	4b1e      	ldr	r3, [pc, #120]	@ (10000708 <_pidPositionServo+0xe4>)
+1000068e:	4b20      	ldr	r3, [pc, #128]	@ (10000710 <_pidPositionServo+0xec>)
 10000690:	f002 f93b 	bl	1000290a <__wrap___aeabi_dmul>
 10000694:	0002      	movs	r2, r0
 10000696:	000b      	movs	r3, r1
@@ -747,253 +747,251 @@ Disassembly of section .text:
 100006a4:	1af0      	subs	r0, r6, r3
 100006a6:	000d      	movs	r5, r1
 100006a8:	f002 f99e 	bl	100029e8 <__wrap___aeabi_i2d>
-100006ac:	0002      	movs	r2, r0
-100006ae:	000b      	movs	r3, r1
-100006b0:	0020      	movs	r0, r4
-100006b2:	0029      	movs	r1, r5
-100006b4:	f002 f902 	bl	100028bc <__wrap___aeabi_dadd>
-100006b8:	f002 f9ae 	bl	10002a18 <__wrap___aeabi_d2iz>
-100006bc:	0002      	movs	r2, r0
-100006be:	0003      	movs	r3, r0
-100006c0:	3263      	adds	r2, #99	@ 0x63
-100006c2:	dbb9      	blt.n	10000638 <_pidPositionServo+0x14>
-100006c4:	2863      	cmp	r0, #99	@ 0x63
-100006c6:	ddb9      	ble.n	1000063c <_pidPositionServo+0x18>
-100006c8:	2363      	movs	r3, #99	@ 0x63
-100006ca:	2800      	cmp	r0, #0
-100006cc:	dcb8      	bgt.n	10000640 <_pidPositionServo+0x1c>
-100006ce:	2800      	cmp	r0, #0
-100006d0:	d008      	beq.n	100006e4 <_pidPositionServo+0xc0>
-100006d2:	22d0      	movs	r2, #208	@ 0xd0
-100006d4:	2180      	movs	r1, #128	@ 0x80
-100006d6:	0612      	lsls	r2, r2, #24
-100006d8:	0149      	lsls	r1, r1, #5
-100006da:	6191      	str	r1, [r2, #24]
+100006ac:	2200      	movs	r2, #0
+100006ae:	4b19      	ldr	r3, [pc, #100]	@ (10000714 <_pidPositionServo+0xf0>)
+100006b0:	f002 f92b 	bl	1000290a <__wrap___aeabi_dmul>
+100006b4:	0002      	movs	r2, r0
+100006b6:	000b      	movs	r3, r1
+100006b8:	0020      	movs	r0, r4
+100006ba:	0029      	movs	r1, r5
+100006bc:	f002 f8fe 	bl	100028bc <__wrap___aeabi_dadd>
+100006c0:	f002 f9aa 	bl	10002a18 <__wrap___aeabi_d2iz>
+100006c4:	0002      	movs	r2, r0
+100006c6:	0003      	movs	r3, r0
+100006c8:	3263      	adds	r2, #99	@ 0x63
+100006ca:	dbb5      	blt.n	10000638 <_pidPositionServo+0x14>
+100006cc:	2863      	cmp	r0, #99	@ 0x63
+100006ce:	ddb5      	ble.n	1000063c <_pidPositionServo+0x18>
+100006d0:	2363      	movs	r3, #99	@ 0x63
+100006d2:	2800      	cmp	r0, #0
+100006d4:	dcb4      	bgt.n	10000640 <_pidPositionServo+0x1c>
+100006d6:	2800      	cmp	r0, #0
+100006d8:	d008      	beq.n	100006ec <_pidPositionServo+0xc8>
+100006da:	22d0      	movs	r2, #208	@ 0xd0
 100006dc:	2180      	movs	r1, #128	@ 0x80
-100006de:	0189      	lsls	r1, r1, #6
-100006e0:	6151      	str	r1, [r2, #20]
-100006e2:	e7b5      	b.n	10000650 <_pidPositionServo+0x2c>
-100006e4:	23d0      	movs	r3, #208	@ 0xd0
-100006e6:	2280      	movs	r2, #128	@ 0x80
-100006e8:	061b      	lsls	r3, r3, #24
-100006ea:	0152      	lsls	r2, r2, #5
-100006ec:	619a      	str	r2, [r3, #24]
+100006de:	0612      	lsls	r2, r2, #24
+100006e0:	0149      	lsls	r1, r1, #5
+100006e2:	6191      	str	r1, [r2, #24]
+100006e4:	2180      	movs	r1, #128	@ 0x80
+100006e6:	0189      	lsls	r1, r1, #6
+100006e8:	6151      	str	r1, [r2, #20]
+100006ea:	e7b1      	b.n	10000650 <_pidPositionServo+0x2c>
+100006ec:	23d0      	movs	r3, #208	@ 0xd0
 100006ee:	2280      	movs	r2, #128	@ 0x80
-100006f0:	0192      	lsls	r2, r2, #6
-100006f2:	2000      	movs	r0, #0
+100006f0:	061b      	lsls	r3, r3, #24
+100006f2:	0152      	lsls	r2, r2, #5
 100006f4:	619a      	str	r2, [r3, #24]
-100006f6:	f000 f8cb 	bl	10000890 <setPWMDuty>
-100006fa:	e7ae      	b.n	1000065a <_pidPositionServo+0x36>
-100006fc:	2000105c 	.word	0x2000105c
-10000700:	20001f34 	.word	0x20001f34
-10000704:	3fe00000 	.word	0x3fe00000
-10000708:	40140000 	.word	0x40140000
+100006f6:	2280      	movs	r2, #128	@ 0x80
+100006f8:	0192      	lsls	r2, r2, #6
+100006fa:	2000      	movs	r0, #0
+100006fc:	619a      	str	r2, [r3, #24]
+100006fe:	f000 f8cd 	bl	1000089c <setPWMDuty>
+10000702:	e7aa      	b.n	1000065a <_pidPositionServo+0x36>
+10000704:	2000105c 	.word	0x2000105c
+10000708:	20001f34 	.word	0x20001f34
+1000070c:	3fe00000 	.word	0x3fe00000
+10000710:	40100000 	.word	0x40100000
+10000714:	400c0000 	.word	0x400c0000
 
-1000070c <motor_init>:
-1000070c:	b510      	push	{r4, lr}
-1000070e:	4921      	ldr	r1, [pc, #132]	@ (10000794 <motor_init+0x88>)
-10000710:	b082      	sub	sp, #8
-10000712:	4821      	ldr	r0, [pc, #132]	@ (10000798 <motor_init+0x8c>)
-10000714:	f004 fc00 	bl	10004f18 <__wrap_printf>
-10000718:	24d0      	movs	r4, #208	@ 0xd0
-1000071a:	2000      	movs	r0, #0
-1000071c:	f000 fb12 	bl	10000d44 <gpio_init>
-10000720:	2301      	movs	r3, #1
-10000722:	0624      	lsls	r4, r4, #24
-10000724:	6263      	str	r3, [r4, #36]	@ 0x24
-10000726:	200e      	movs	r0, #14
+10000718 <motor_init>:
+10000718:	b510      	push	{r4, lr}
+1000071a:	4921      	ldr	r1, [pc, #132]	@ (100007a0 <motor_init+0x88>)
+1000071c:	b082      	sub	sp, #8
+1000071e:	4821      	ldr	r0, [pc, #132]	@ (100007a4 <motor_init+0x8c>)
+10000720:	f004 fbfa 	bl	10004f18 <__wrap_printf>
+10000724:	24d0      	movs	r4, #208	@ 0xd0
+10000726:	2000      	movs	r0, #0
 10000728:	f000 fb0c 	bl	10000d44 <gpio_init>
-1000072c:	2380      	movs	r3, #128	@ 0x80
-1000072e:	01db      	lsls	r3, r3, #7
-10000730:	62a3      	str	r3, [r4, #40]	@ 0x28
-10000732:	200f      	movs	r0, #15
+1000072c:	2301      	movs	r3, #1
+1000072e:	0624      	lsls	r4, r4, #24
+10000730:	6263      	str	r3, [r4, #36]	@ 0x24
+10000732:	200e      	movs	r0, #14
 10000734:	f000 fb06 	bl	10000d44 <gpio_init>
 10000738:	2380      	movs	r3, #128	@ 0x80
-1000073a:	021b      	lsls	r3, r3, #8
+1000073a:	01db      	lsls	r3, r3, #7
 1000073c:	62a3      	str	r3, [r4, #40]	@ 0x28
-1000073e:	200c      	movs	r0, #12
+1000073e:	200f      	movs	r0, #15
 10000740:	f000 fb00 	bl	10000d44 <gpio_init>
 10000744:	2380      	movs	r3, #128	@ 0x80
-10000746:	015b      	lsls	r3, r3, #5
-10000748:	6263      	str	r3, [r4, #36]	@ 0x24
-1000074a:	200d      	movs	r0, #13
+10000746:	021b      	lsls	r3, r3, #8
+10000748:	62a3      	str	r3, [r4, #40]	@ 0x28
+1000074a:	200c      	movs	r0, #12
 1000074c:	f000 fafa 	bl	10000d44 <gpio_init>
 10000750:	2380      	movs	r3, #128	@ 0x80
-10000752:	019b      	lsls	r3, r3, #6
-10000754:	2201      	movs	r2, #1
-10000756:	2104      	movs	r1, #4
-10000758:	6263      	str	r3, [r4, #36]	@ 0x24
-1000075a:	200e      	movs	r0, #14
-1000075c:	4b0f      	ldr	r3, [pc, #60]	@ (1000079c <motor_init+0x90>)
-1000075e:	f000 fa89 	bl	10000c74 <gpio_set_irq_enabled_with_callback>
-10000762:	480f      	ldr	r0, [pc, #60]	@ (100007a0 <motor_init+0x94>)
-10000764:	f000 f838 	bl	100007d8 <ConfigurePWM>
-10000768:	200a      	movs	r0, #10
-1000076a:	f000 f891 	bl	10000890 <setPWMDuty>
-1000076e:	205a      	movs	r0, #90	@ 0x5a
-10000770:	f000 f88e 	bl	10000890 <setPWMDuty>
-10000774:	2021      	movs	r0, #33	@ 0x21
-10000776:	f000 f88b 	bl	10000890 <setPWMDuty>
-1000077a:	2300      	movs	r3, #0
-1000077c:	2280      	movs	r2, #128	@ 0x80
-1000077e:	9301      	str	r3, [sp, #4]
-10000780:	3302      	adds	r3, #2
-10000782:	9300      	str	r3, [sp, #0]
-10000784:	4907      	ldr	r1, [pc, #28]	@ (100007a4 <motor_init+0x98>)
+10000752:	015b      	lsls	r3, r3, #5
+10000754:	6263      	str	r3, [r4, #36]	@ 0x24
+10000756:	200d      	movs	r0, #13
+10000758:	f000 faf4 	bl	10000d44 <gpio_init>
+1000075c:	2380      	movs	r3, #128	@ 0x80
+1000075e:	019b      	lsls	r3, r3, #6
+10000760:	2201      	movs	r2, #1
+10000762:	2104      	movs	r1, #4
+10000764:	6263      	str	r3, [r4, #36]	@ 0x24
+10000766:	200e      	movs	r0, #14
+10000768:	4b0f      	ldr	r3, [pc, #60]	@ (100007a8 <motor_init+0x90>)
+1000076a:	f000 fa83 	bl	10000c74 <gpio_set_irq_enabled_with_callback>
+1000076e:	480f      	ldr	r0, [pc, #60]	@ (100007ac <motor_init+0x94>)
+10000770:	f000 f838 	bl	100007e4 <ConfigurePWM>
+10000774:	200a      	movs	r0, #10
+10000776:	f000 f891 	bl	1000089c <setPWMDuty>
+1000077a:	205a      	movs	r0, #90	@ 0x5a
+1000077c:	f000 f88e 	bl	1000089c <setPWMDuty>
+10000780:	2021      	movs	r0, #33	@ 0x21
+10000782:	f000 f88b 	bl	1000089c <setPWMDuty>
 10000786:	2300      	movs	r3, #0
-10000788:	00d2      	lsls	r2, r2, #3
-1000078a:	4807      	ldr	r0, [pc, #28]	@ (100007a8 <motor_init+0x9c>)
-1000078c:	f008 f9ea 	bl	10008b64 <xTaskCreate>
-10000790:	b002      	add	sp, #8
-10000792:	bd10      	pop	{r4, pc}
-10000794:	1000a80c 	.word	0x1000a80c
-10000798:	1000a628 	.word	0x1000a628
-1000079c:	10000435 	.word	0x10000435
-100007a0:	00007530 	.word	0x00007530
-100007a4:	1000a630 	.word	0x1000a630
-100007a8:	10000625 	.word	0x10000625
+10000788:	2280      	movs	r2, #128	@ 0x80
+1000078a:	9301      	str	r3, [sp, #4]
+1000078c:	3302      	adds	r3, #2
+1000078e:	9300      	str	r3, [sp, #0]
+10000790:	4907      	ldr	r1, [pc, #28]	@ (100007b0 <motor_init+0x98>)
+10000792:	2300      	movs	r3, #0
+10000794:	00d2      	lsls	r2, r2, #3
+10000796:	4807      	ldr	r0, [pc, #28]	@ (100007b4 <motor_init+0x9c>)
+10000798:	f008 f9e4 	bl	10008b64 <xTaskCreate>
+1000079c:	b002      	add	sp, #8
+1000079e:	bd10      	pop	{r4, pc}
+100007a0:	1000a80c 	.word	0x1000a80c
+100007a4:	1000a628 	.word	0x1000a628
+100007a8:	10000435 	.word	0x10000435
+100007ac:	00007530 	.word	0x00007530
+100007b0:	1000a630 	.word	0x1000a630
+100007b4:	10000625 	.word	0x10000625
 
-100007ac <set_postion>:
-100007ac:	4b01      	ldr	r3, [pc, #4]	@ (100007b4 <set_postion+0x8>)
-100007ae:	6018      	str	r0, [r3, #0]
-100007b0:	4770      	bx	lr
-100007b2:	46c0      	nop			@ (mov r8, r8)
-100007b4:	20001f34 	.word	0x20001f34
+100007b8 <set_postion>:
+100007b8:	4b01      	ldr	r3, [pc, #4]	@ (100007c0 <set_postion+0x8>)
+100007ba:	6018      	str	r0, [r3, #0]
+100007bc:	4770      	bx	lr
+100007be:	46c0      	nop			@ (mov r8, r8)
+100007c0:	20001f34 	.word	0x20001f34
 
-100007b8 <motor_set_position>:
-100007b8:	b510      	push	{r4, lr}
-100007ba:	0004      	movs	r4, r0
-100007bc:	0022      	movs	r2, r4
-100007be:	4903      	ldr	r1, [pc, #12]	@ (100007cc <motor_set_position+0x14>)
-100007c0:	4803      	ldr	r0, [pc, #12]	@ (100007d0 <motor_set_position+0x18>)
-100007c2:	f004 fba9 	bl	10004f18 <__wrap_printf>
-100007c6:	4b03      	ldr	r3, [pc, #12]	@ (100007d4 <motor_set_position+0x1c>)
-100007c8:	601c      	str	r4, [r3, #0]
-100007ca:	bd10      	pop	{r4, pc}
-100007cc:	1000a7f8 	.word	0x1000a7f8
-100007d0:	1000a634 	.word	0x1000a634
-100007d4:	2000105c 	.word	0x2000105c
+100007c4 <motor_set_position>:
+100007c4:	b510      	push	{r4, lr}
+100007c6:	0004      	movs	r4, r0
+100007c8:	0022      	movs	r2, r4
+100007ca:	4903      	ldr	r1, [pc, #12]	@ (100007d8 <motor_set_position+0x14>)
+100007cc:	4803      	ldr	r0, [pc, #12]	@ (100007dc <motor_set_position+0x18>)
+100007ce:	f004 fba3 	bl	10004f18 <__wrap_printf>
+100007d2:	4b03      	ldr	r3, [pc, #12]	@ (100007e0 <motor_set_position+0x1c>)
+100007d4:	601c      	str	r4, [r3, #0]
+100007d6:	bd10      	pop	{r4, pc}
+100007d8:	1000a7f8 	.word	0x1000a7f8
+100007dc:	1000a634 	.word	0x1000a634
+100007e0:	2000105c 	.word	0x2000105c
 
-100007d8 <ConfigurePWM>:
-100007d8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
-100007da:	2104      	movs	r1, #4
-100007dc:	0007      	movs	r7, r0
-100007de:	200b      	movs	r0, #11
-100007e0:	f000 f9ee 	bl	10000bc0 <gpio_set_function>
-100007e4:	2305      	movs	r3, #5
-100007e6:	4c20      	ldr	r4, [pc, #128]	@ (10000868 <ConfigurePWM+0x90>)
-100007e8:	4d20      	ldr	r5, [pc, #128]	@ (1000086c <ConfigurePWM+0x94>)
-100007ea:	6023      	str	r3, [r4, #0]
-100007ec:	2005      	movs	r0, #5
-100007ee:	3b04      	subs	r3, #4
-100007f0:	602b      	str	r3, [r5, #0]
-100007f2:	f001 fbc5 	bl	10001f80 <clock_get_hz>
-100007f6:	0039      	movs	r1, r7
-100007f8:	0006      	movs	r6, r0
-100007fa:	f001 fe1b 	bl	10002434 <__wrap___aeabi_uidiv>
-100007fe:	4f1c      	ldr	r7, [pc, #112]	@ (10000870 <ConfigurePWM+0x98>)
-10000800:	0003      	movs	r3, r0
-10000802:	0032      	movs	r2, r6
-10000804:	491b      	ldr	r1, [pc, #108]	@ (10000874 <ConfigurePWM+0x9c>)
-10000806:	6038      	str	r0, [r7, #0]
-10000808:	481b      	ldr	r0, [pc, #108]	@ (10000878 <ConfigurePWM+0xa0>)
-1000080a:	f004 fb85 	bl	10004f18 <__wrap_printf>
-1000080e:	6820      	ldr	r0, [r4, #0]
-10000810:	683a      	ldr	r2, [r7, #0]
-10000812:	0083      	lsls	r3, r0, #2
-10000814:	181b      	adds	r3, r3, r0
-10000816:	4819      	ldr	r0, [pc, #100]	@ (1000087c <ConfigurePWM+0xa4>)
-10000818:	0411      	lsls	r1, r2, #16
-1000081a:	009b      	lsls	r3, r3, #2
-1000081c:	0c09      	lsrs	r1, r1, #16
-1000081e:	1818      	adds	r0, r3, r0
-10000820:	6101      	str	r1, [r0, #16]
-10000822:	4917      	ldr	r1, [pc, #92]	@ (10000880 <ConfigurePWM+0xa8>)
-10000824:	03d2      	lsls	r2, r2, #15
-10000826:	468c      	mov	ip, r1
-10000828:	6829      	ldr	r1, [r5, #0]
-1000082a:	4463      	add	r3, ip
-1000082c:	0c12      	lsrs	r2, r2, #16
-1000082e:	2900      	cmp	r1, #0
-10000830:	d017      	beq.n	10000862 <ConfigurePWM+0x8a>
-10000832:	4914      	ldr	r1, [pc, #80]	@ (10000884 <ConfigurePWM+0xac>)
-10000834:	0412      	lsls	r2, r2, #16
-10000836:	6818      	ldr	r0, [r3, #0]
-10000838:	4042      	eors	r2, r0
-1000083a:	400a      	ands	r2, r1
-1000083c:	2180      	movs	r1, #128	@ 0x80
-1000083e:	0149      	lsls	r1, r1, #5
-10000840:	468c      	mov	ip, r1
-10000842:	4463      	add	r3, ip
-10000844:	601a      	str	r2, [r3, #0]
-10000846:	6822      	ldr	r2, [r4, #0]
-10000848:	0093      	lsls	r3, r2, #2
-1000084a:	189b      	adds	r3, r3, r2
-1000084c:	4a0b      	ldr	r2, [pc, #44]	@ (1000087c <ConfigurePWM+0xa4>)
-1000084e:	009b      	lsls	r3, r3, #2
-10000850:	189a      	adds	r2, r3, r2
-10000852:	6811      	ldr	r1, [r2, #0]
-10000854:	2201      	movs	r2, #1
-10000856:	438a      	bics	r2, r1
-10000858:	490b      	ldr	r1, [pc, #44]	@ (10000888 <ConfigurePWM+0xb0>)
-1000085a:	468c      	mov	ip, r1
-1000085c:	4463      	add	r3, ip
-1000085e:	601a      	str	r2, [r3, #0]
-10000860:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-10000862:	490a      	ldr	r1, [pc, #40]	@ (1000088c <ConfigurePWM+0xb4>)
-10000864:	e7e7      	b.n	10000836 <ConfigurePWM+0x5e>
-10000866:	46c0      	nop			@ (mov r8, r8)
-10000868:	20001f38 	.word	0x20001f38
-1000086c:	20001edc 	.word	0x20001edc
-10000870:	20002338 	.word	0x20002338
-10000874:	1000a818 	.word	0x1000a818
-10000878:	1000a648 	.word	0x1000a648
-1000087c:	40050000 	.word	0x40050000
-10000880:	4005000c 	.word	0x4005000c
-10000884:	ffff0000 	.word	0xffff0000
-10000888:	40051000 	.word	0x40051000
-1000088c:	0000ffff 	.word	0x0000ffff
+100007e4 <ConfigurePWM>:
+100007e4:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+100007e6:	2104      	movs	r1, #4
+100007e8:	0007      	movs	r7, r0
+100007ea:	200b      	movs	r0, #11
+100007ec:	f000 f9e8 	bl	10000bc0 <gpio_set_function>
+100007f0:	2305      	movs	r3, #5
+100007f2:	4c20      	ldr	r4, [pc, #128]	@ (10000874 <ConfigurePWM+0x90>)
+100007f4:	4d20      	ldr	r5, [pc, #128]	@ (10000878 <ConfigurePWM+0x94>)
+100007f6:	6023      	str	r3, [r4, #0]
+100007f8:	2005      	movs	r0, #5
+100007fa:	3b04      	subs	r3, #4
+100007fc:	602b      	str	r3, [r5, #0]
+100007fe:	f001 fbbf 	bl	10001f80 <clock_get_hz>
+10000802:	0039      	movs	r1, r7
+10000804:	0006      	movs	r6, r0
+10000806:	f001 fe15 	bl	10002434 <__wrap___aeabi_uidiv>
+1000080a:	4f1c      	ldr	r7, [pc, #112]	@ (1000087c <ConfigurePWM+0x98>)
+1000080c:	0003      	movs	r3, r0
+1000080e:	0032      	movs	r2, r6
+10000810:	491b      	ldr	r1, [pc, #108]	@ (10000880 <ConfigurePWM+0x9c>)
+10000812:	6038      	str	r0, [r7, #0]
+10000814:	481b      	ldr	r0, [pc, #108]	@ (10000884 <ConfigurePWM+0xa0>)
+10000816:	f004 fb7f 	bl	10004f18 <__wrap_printf>
+1000081a:	6820      	ldr	r0, [r4, #0]
+1000081c:	683a      	ldr	r2, [r7, #0]
+1000081e:	0083      	lsls	r3, r0, #2
+10000820:	181b      	adds	r3, r3, r0
+10000822:	4819      	ldr	r0, [pc, #100]	@ (10000888 <ConfigurePWM+0xa4>)
+10000824:	0411      	lsls	r1, r2, #16
+10000826:	009b      	lsls	r3, r3, #2
+10000828:	0c09      	lsrs	r1, r1, #16
+1000082a:	1818      	adds	r0, r3, r0
+1000082c:	6101      	str	r1, [r0, #16]
+1000082e:	4917      	ldr	r1, [pc, #92]	@ (1000088c <ConfigurePWM+0xa8>)
+10000830:	03d2      	lsls	r2, r2, #15
+10000832:	468c      	mov	ip, r1
+10000834:	6829      	ldr	r1, [r5, #0]
+10000836:	4463      	add	r3, ip
+10000838:	0c12      	lsrs	r2, r2, #16
+1000083a:	2900      	cmp	r1, #0
+1000083c:	d017      	beq.n	1000086e <ConfigurePWM+0x8a>
+1000083e:	4914      	ldr	r1, [pc, #80]	@ (10000890 <ConfigurePWM+0xac>)
+10000840:	0412      	lsls	r2, r2, #16
+10000842:	6818      	ldr	r0, [r3, #0]
+10000844:	4042      	eors	r2, r0
+10000846:	400a      	ands	r2, r1
+10000848:	2180      	movs	r1, #128	@ 0x80
+1000084a:	0149      	lsls	r1, r1, #5
+1000084c:	468c      	mov	ip, r1
+1000084e:	4463      	add	r3, ip
+10000850:	601a      	str	r2, [r3, #0]
+10000852:	6822      	ldr	r2, [r4, #0]
+10000854:	0093      	lsls	r3, r2, #2
+10000856:	189b      	adds	r3, r3, r2
+10000858:	4a0b      	ldr	r2, [pc, #44]	@ (10000888 <ConfigurePWM+0xa4>)
+1000085a:	009b      	lsls	r3, r3, #2
+1000085c:	189a      	adds	r2, r3, r2
+1000085e:	6811      	ldr	r1, [r2, #0]
+10000860:	2201      	movs	r2, #1
+10000862:	438a      	bics	r2, r1
+10000864:	490b      	ldr	r1, [pc, #44]	@ (10000894 <ConfigurePWM+0xb0>)
+10000866:	468c      	mov	ip, r1
+10000868:	4463      	add	r3, ip
+1000086a:	601a      	str	r2, [r3, #0]
+1000086c:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+1000086e:	490a      	ldr	r1, [pc, #40]	@ (10000898 <ConfigurePWM+0xb4>)
+10000870:	e7e7      	b.n	10000842 <ConfigurePWM+0x5e>
+10000872:	46c0      	nop			@ (mov r8, r8)
+10000874:	20001f38 	.word	0x20001f38
+10000878:	20001edc 	.word	0x20001edc
+1000087c:	20002338 	.word	0x20002338
+10000880:	1000a818 	.word	0x1000a818
+10000884:	1000a648 	.word	0x1000a648
+10000888:	40050000 	.word	0x40050000
+1000088c:	4005000c 	.word	0x4005000c
+10000890:	ffff0000 	.word	0xffff0000
+10000894:	40051000 	.word	0x40051000
+10000898:	0000ffff 	.word	0x0000ffff
 
-10000890 <setPWMDuty>:
-10000890:	4b13      	ldr	r3, [pc, #76]	@ (100008e0 <setPWMDuty+0x50>)
-10000892:	b570      	push	{r4, r5, r6, lr}
-10000894:	681b      	ldr	r3, [r3, #0]
-10000896:	0005      	movs	r5, r0
-10000898:	009c      	lsls	r4, r3, #2
-1000089a:	18e4      	adds	r4, r4, r3
-1000089c:	4b11      	ldr	r3, [pc, #68]	@ (100008e4 <setPWMDuty+0x54>)
-1000089e:	2164      	movs	r1, #100	@ 0x64
-100008a0:	469c      	mov	ip, r3
-100008a2:	4b11      	ldr	r3, [pc, #68]	@ (100008e8 <setPWMDuty+0x58>)
-100008a4:	00a4      	lsls	r4, r4, #2
-100008a6:	6818      	ldr	r0, [r3, #0]
-100008a8:	4464      	add	r4, ip
-100008aa:	f001 fdc3 	bl	10002434 <__wrap___aeabi_uidiv>
-100008ae:	4368      	muls	r0, r5
-100008b0:	1c03      	adds	r3, r0, #0
-100008b2:	b280      	uxth	r0, r0
-100008b4:	2832      	cmp	r0, #50	@ 0x32
-100008b6:	d200      	bcs.n	100008ba <setPWMDuty+0x2a>
-100008b8:	2332      	movs	r3, #50	@ 0x32
-100008ba:	4a0c      	ldr	r2, [pc, #48]	@ (100008ec <setPWMDuty+0x5c>)
-100008bc:	b29b      	uxth	r3, r3
-100008be:	6812      	ldr	r2, [r2, #0]
-100008c0:	2a00      	cmp	r2, #0
-100008c2:	d00a      	beq.n	100008da <setPWMDuty+0x4a>
-100008c4:	4a0a      	ldr	r2, [pc, #40]	@ (100008f0 <setPWMDuty+0x60>)
-100008c6:	041b      	lsls	r3, r3, #16
-100008c8:	6821      	ldr	r1, [r4, #0]
-100008ca:	404b      	eors	r3, r1
-100008cc:	4013      	ands	r3, r2
-100008ce:	2280      	movs	r2, #128	@ 0x80
-100008d0:	0152      	lsls	r2, r2, #5
-100008d2:	4694      	mov	ip, r2
-100008d4:	4464      	add	r4, ip
-100008d6:	6023      	str	r3, [r4, #0]
-100008d8:	bd70      	pop	{r4, r5, r6, pc}
-100008da:	4a06      	ldr	r2, [pc, #24]	@ (100008f4 <setPWMDuty+0x64>)
-100008dc:	e7f4      	b.n	100008c8 <setPWMDuty+0x38>
-100008de:	46c0      	nop			@ (mov r8, r8)
+1000089c <setPWMDuty>:
+1000089c:	4b10      	ldr	r3, [pc, #64]	@ (100008e0 <setPWMDuty+0x44>)
+1000089e:	b570      	push	{r4, r5, r6, lr}
+100008a0:	681b      	ldr	r3, [r3, #0]
+100008a2:	0005      	movs	r5, r0
+100008a4:	009c      	lsls	r4, r3, #2
+100008a6:	18e4      	adds	r4, r4, r3
+100008a8:	4b0e      	ldr	r3, [pc, #56]	@ (100008e4 <setPWMDuty+0x48>)
+100008aa:	2164      	movs	r1, #100	@ 0x64
+100008ac:	469c      	mov	ip, r3
+100008ae:	4b0e      	ldr	r3, [pc, #56]	@ (100008e8 <setPWMDuty+0x4c>)
+100008b0:	00a4      	lsls	r4, r4, #2
+100008b2:	6818      	ldr	r0, [r3, #0]
+100008b4:	4464      	add	r4, ip
+100008b6:	f001 fdbd 	bl	10002434 <__wrap___aeabi_uidiv>
+100008ba:	4b0c      	ldr	r3, [pc, #48]	@ (100008ec <setPWMDuty+0x50>)
+100008bc:	4368      	muls	r0, r5
+100008be:	681b      	ldr	r3, [r3, #0]
+100008c0:	b280      	uxth	r0, r0
+100008c2:	2b00      	cmp	r3, #0
+100008c4:	d00a      	beq.n	100008dc <setPWMDuty+0x40>
+100008c6:	4b0a      	ldr	r3, [pc, #40]	@ (100008f0 <setPWMDuty+0x54>)
+100008c8:	0400      	lsls	r0, r0, #16
+100008ca:	6822      	ldr	r2, [r4, #0]
+100008cc:	4042      	eors	r2, r0
+100008ce:	4013      	ands	r3, r2
+100008d0:	2280      	movs	r2, #128	@ 0x80
+100008d2:	0152      	lsls	r2, r2, #5
+100008d4:	4694      	mov	ip, r2
+100008d6:	4464      	add	r4, ip
+100008d8:	6023      	str	r3, [r4, #0]
+100008da:	bd70      	pop	{r4, r5, r6, pc}
+100008dc:	4b05      	ldr	r3, [pc, #20]	@ (100008f4 <setPWMDuty+0x58>)
+100008de:	e7f4      	b.n	100008ca <setPWMDuty+0x2e>
 100008e0:	20001f38 	.word	0x20001f38
 100008e4:	4005000c 	.word	0x4005000c
 100008e8:	20002338 	.word	0x20002338
