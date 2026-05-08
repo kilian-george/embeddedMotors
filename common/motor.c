@@ -20,7 +20,7 @@ void motorDrive(int32_t drive) {
     }
     
     int32_t duty = abs(drive);
-    duty = (duty * (100 - DEADBAND) / 100);
+    // duty = (duty * (100 - DEADBAND) / 100);
     setPWMDuty(duty);
 }
 
@@ -30,19 +30,20 @@ static void _pidPositionServo( void *notUsed ) {
     double integral = 0;
     int dt=1;
 
-    double Kp = 0.075; // TODO You will need to discover these three parameters
-    double Ki = 0.05;
-    double Kd = 0.01;
+    double Kp = 4; // TODO You will need to discover these three parameters
+    double Ki = 0;
+    double Kd = 3.5;
 
     while(1) {
         int error = _motorSetpointPosition - _encoder;  // where we want to be minus where were at
-        integral = integral + error*dt;
+        integral = (error + previous_error)*0.5*dt;
+        //integral = integral + error*dt;
         double derivative = (error - previous_error)/dt;
         double output = Kp*error + Ki*integral + Kd*derivative;
         int drive = output;
         if (drive > 99) drive = 99;
         if (drive < -99) drive = -99;
-        printf("%s: position: %d Error: %d Int: %f Der: %f Drive: %d\n", __func__, _motorSetpointPosition, error, integral, derivative, drive);
+        printf("TP: %d AP: %d Error: %d Drive: %d \n", _motorSetpointPosition, _encoder, error, drive);
         motorDrive(drive);
         previous_error = error;
 
@@ -54,7 +55,7 @@ static void _pidPositionServo( void *notUsed ) {
         //         _readTimer(),
         //         motor_get_velocity());
 
-        vTaskDelay(dt);
+        vTaskDelay(pdMS_TO_TICKS(dt));
         //vTaskDelayUntil( &xLastWakeTime, dt);        
     }
 }

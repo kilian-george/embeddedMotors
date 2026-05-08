@@ -11,7 +11,7 @@ static SemaphoreHandle_t _sw1 = NULL;
 static SemaphoreHandle_t _sw2 = NULL;
 
 uint8_t  sw1_pressed     = 0;
-int32_t  positions[9]    = {435, 870, 1305, 1740, 3480, 5220, -5220, -3480, 0};
+int32_t  positions[9]    = {0, 435, 870, 1305, 1740, 3480, 5220, -5220, -3480};
 uint8_t  position_index  = 0;
 int32_t  target_position = 0;
 
@@ -28,71 +28,9 @@ void gpio_callback(uint gpio, uint32_t event) {
         xSemaphoreGiveFromISR(_sw2, &xHigherPriorityTaskWoken);
         portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 
-    } else if (gpio == PHA_PIN || gpio == PHB_PIN){
-        gpio_put(PULSE, 1);
-
-        // Manufacture PHA and PHB state.
-        static bool PHA = false;
-        static bool PHB = false;
-
-        PHA = (gpio == PHA_PIN) ? (event == IRQ_EDGE_RISE) : PHA;
-        PHB = (gpio == PHB_PIN) ? (event == IRQ_EDGE_RISE) : PHB;
-
-        // printf("gpio:%d, event:%d, PHA:%d, PHB:%d\n", gpio, event, PHA, PHB);
-
-        static uint32_t _priorTimer;    
-        static int8_t old = 0;
-        uint8_t new;
-
-        new  = (PHA) ? 0x02 : 0x00;
-        new |= (PHB) ? 0x01 : 0x00;
-        
-        switch(old) {
-            case 0:
-                switch(new) {
-                    case 0: break;
-                    case 1: _encoder++; break;
-                    case 2: _encoder--; break;
-                    case 3: break;
-                }
-                break;
-
-            case 1:
-                switch(new) {
-                    case 0: _encoder--; break;
-                    case 1: break;
-                    case 2: break;
-                    case 3: _encoder++; break;
-                }
-                break;
-            case 2:
-                switch(new) {
-                    case 0: _encoder++; break;
-                    case 1: break;
-                    case 2: break;
-                    case 3: _encoder--; break;
-                }
-                break;
-
-            case 3:
-                switch(new) {
-                    case 0: break;
-                    case 1: _encoder--; break;
-                    case 2: _encoder++; break;
-                    case 3: break;
-                }
-                break;
-        }
-        old = new;
-
-        uint32_t tNow = _readTimer();
-        if (_priorTimer < tNow) _velocitySamples[_velocityNext] = tNow - _priorTimer;
-        else _velocitySamples[_velocityNext] = (tNow+0x7fffffff) - (_priorTimer-0x7fffffff);
-
-        _priorTimer = tNow;
-        _velocityNext = (_velocityNext+1) % VELOCITY_SAMPLES;
-
-        gpio_put(PULSE, 0);
+    } else if (gpio == PHA_PIN){
+        if (gpio_get(PHB_PIN)) _encoder++;
+        else _encoder--;
     }
 }
 
@@ -135,16 +73,25 @@ void hardware_init(void) {
     _sw1 = xSemaphoreCreateBinary();
     _sw2 = xSemaphoreCreateBinary();
 
-    gpio_set_irq_enabled_with_callback(PHA_PIN, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true, &gpio_callback);    
-    gpio_set_irq_enabled(PHB_PIN, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true);
+    gpio_set_irq_enabled_with_callback(PHA_PIN, GPIO_IRQ_EDGE_RISE , true, &gpio_callback);    
+    // gpio_set_irq_enabled(PHB_PIN, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, true);
     gpio_set_irq_enabled(SW1, GPIO_IRQ_EDGE_FALL, true);    
     gpio_set_irq_enabled(SW2, GPIO_IRQ_EDGE_FALL, true);    
 }
 
 
 void heartbeat(void *none) {
+    static int value = -100;
+    static int count = 0;
+
     while(1) {
-        motorDrive(90);
+        gpio_put(LED, count++ & 1);
+        // setPWMDuty(value);
+        // motorDrive(value);
+        // value += 20;
+        // if (value >= 100) value = -100;
+        // printf("value: %d\n", value);
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
@@ -156,14 +103,16 @@ void sw1_click(void *none) {
             position_index = (position_index + 1) % 9;
 
             target_position = positions[position_index];
-            // write(MOTOR_CMD_0,  target_position & 0x000000FF);
-            // write(MOTOR_CMD_8,  target_position & 0x0000FF00);
-            // write(MOTOR_CMD_16, target_position & 0x00FF0000);
-            // write(MOTOR_CMD_24, target_position & 0xFF000000);
-            // write(CMD_REG, SET_MOTOR);
+            write(MOTOR_CMD_0,  (uint8_t)(target_position & 0x000000FF));
+            write(MOTOR_CMD_8,  (uint8_t)((target_position >> 8) & 0x000000FF));
+            write(MOTOR_CMD_16, (uint8_t)((target_position >> 16) & 0x000000FF));
+            write(MOTOR_CMD_24, (uint8_t)((target_position >> 24) & 0x000000FF));
+            write(CMD_REG, SET_MOTOR);
             // perhaps a delay here while child copies the 4 MOTOR_CMD registers to the "PID motor setpoint"
-            // motor_set_position(target_position);
-            motorDrive(90);
+            motor_set_position(target_position);
+            
+            // motorDrive(90);
+
         }
     }
 }
@@ -177,13 +126,13 @@ void sw2_click(void *none) {
             else position_index -= 1;
             target_position = positions[position_index];
 
-            // write(MOTOR_CMD_0,  target_position & 0x000000FF);
-            // write(MOTOR_CMD_8,  target_position & 0x0000FF00);
-            // write(MOTOR_CMD_16, target_position & 0x00FF0000);
-            // write(MOTOR_CMD_24, target_position & 0xFF000000);
-            // write(CMD_REG, SET_MOTOR);
+            write(MOTOR_CMD_0,  (uint8_t)(target_position & 0x000000FF));
+            write(MOTOR_CMD_8,  (uint8_t)((target_position >> 8) & 0x000000FF));
+            write(MOTOR_CMD_16, (uint8_t)((target_position >> 16) & 0x000000FF));
+            write(MOTOR_CMD_24, (uint8_t)((target_position >> 24) & 0x000000FF));
+            write(CMD_REG, SET_MOTOR);
             // perhaps a delay here while child copies the 4 MOTOR_CMD registers to the "PID motor setpoint"
-            // motor_set_position(target_position);
+            motor_set_position(target_position);
         }
     }
 }
@@ -199,10 +148,11 @@ int main(void) {
     hardware_init();
     motor_init();
 
+    motorDrive(90);
     // create tasks
     xTaskCreate(sw1_click, "sw1_click", 1024, NULL, MIN_PRIORITY+3, NULL);
     xTaskCreate(sw2_click, "sw2_click", 1024, NULL, MIN_PRIORITY+3, NULL);
-    // xTaskCreate(heartbeat, "hearbeat", 256, NULL, MIN_PRIORITY, NULL); 
+    xTaskCreate(heartbeat, "hearbeat", 256, NULL, MIN_PRIORITY, NULL); 
 
     vTaskStartScheduler();
     

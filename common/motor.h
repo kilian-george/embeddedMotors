@@ -52,5 +52,7 @@ motor_status_t motor_status(void);
 void motor_speed_limit(motor_speed_t speed);
 void motor_move(uint32_t pos_in_tics);
 uint32_t _readTimer(void);
+void set_motor();
+
 
 #endif

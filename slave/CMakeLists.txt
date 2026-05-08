@@ -61,6 +61,7 @@ add_executable(${PROJECT_NAME}
     slave.c
     ../common/pwm.c
     ../common/motor.c
+    ../common/myAssert.c
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)

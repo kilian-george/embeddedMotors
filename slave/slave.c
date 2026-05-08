@@ -9,6 +9,10 @@
 // registers
 uint8_t registers[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};      // credits to Killian for his idea on how to setup the registers
 
+void set_motor() {
+    int32_t motor_cmd = (int32_t)((*(int64_t*)(registers)) & 0x00000000FFFFFFFF);
+    motor_set_position(motor_cmd);
+}
 
 void gpio_callback(uint gpio, uint32_t unused) {
     queueData qd;
@@ -33,7 +37,10 @@ void gpio_callback(uint gpio, uint32_t unused) {
             xQueueSendFromISR(Queue, &qd, NULL);
             priorCLK = clk;
         }
-
+    } else if (gpio == PHA_PIN){
+        if (gpio_get(PHB_PIN)) _encoder++;
+        else _encoder--;
+    }
     gpio_put(PICO_DEFAULT_LED_PIN, LOW);      // set LED pin 25 LOW
 }
 
@@ -44,7 +51,11 @@ void hardware_init(void) {
     gpio_init(CS);
     gpio_init(MISO);
     gpio_init(LED);
+    gpio_init(PHA_PIN);
+    gpio_init(PHB_PIN);
     
+    gpio_set_dir(PHA_PIN, GPIO_IN);
+    gpio_set_dir(PHB_PIN, GPIO_IN);
     gpio_set_dir(MOSI,  GPIO_IN);
     gpio_set_dir(CLK,   GPIO_IN);
     gpio_set_dir(CS,    GPIO_IN);
@@ -58,12 +69,9 @@ void hardware_init(void) {
     Queue = xQueueCreate(100, sizeof(queueData)); // one spi transfer has 34 events to store in the queue
 
     // ENABLE INTERRUPTS
-    gpio_set_irq_callback(&gpio_callback); // set the callback fn (for all gpio pins)
-
+    gpio_set_irq_enabled_with_callback(PHA_PIN, GPIO_IRQ_EDGE_RISE , true, &gpio_callback);    
     gpio_set_irq_enabled(CS,    GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true);
     gpio_set_irq_enabled(CLK,   GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true);
-
-    irq_set_enabled(IO_IRQ_BANK0, true);     // the Master Power Switch for the GPIO interrupt subsystem
 }
 
 
@@ -140,7 +148,7 @@ void state_machine(void *none) {              // where the state machine will ex
                 }
                 if (bit_count >= 8) {
                     registers[reg_select] = buffer;
-                    
+                    if (reg_select == CMD_REG && (CMD_REG == SET_MOTOR)) set_motor();
                     bit_count = 0;
                     buffer = 0;
                     state = DONE;
@@ -176,6 +184,7 @@ int main(void) {
 
     sleep_ms(20);           // give time for serial bus to init
     hardware_init();
+    motor_init();
 
     // create tasks
     xTaskCreate(state_machine, "state_machine", 2048, NULL, MIN_PRIORITY, NULL);

@@ -7,7 +7,7 @@
 #include "hardware/pwm.h"
 #include "hardware/clocks.h"
 
-#define PWM 10
+#define PWM 11
 
 void ConfigurePWM(uint32_t baseFrequency);
 void setPWMDuty(uint32_t percent);

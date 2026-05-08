@@ -5,27 +5,23 @@
 #include <semphr.h>
 #include "hardware/gpio.h"
 #include "pico/stdlib.h"
+#include "motor.h"
 
 #define MIN_PRIORITY 1
 #define LOW          0
 #define HIGH         1
+
 #define LED          25             
 #define MOSI         19             
 #define CLK          18             
 #define CS           17            
 #define MISO         16
-#define KP           0.075
-#define KI           0.05
-#define KD           0.1         
+#define PHA_PIN      14
+#define PHB_PIN      15
 
-const uint8_t PHA_PIN = 14;
-const uint8_t PHB_PIN = 15;
-const uint8_t CT1_PIN = 12;
-const uint8_t CT2_PIN = 13;
 
-void     MotorMover(void*);
-void     heartbeat(void*);
-uint32_t rpmCalc();
+#define SET_MOTOR    ((uint8_t)0x01)    // CMD
+#define GET_MOTOR    ((uint8_t)0x00)    // CMD
 
 
 #define getCS()    gpio_get(CS)
